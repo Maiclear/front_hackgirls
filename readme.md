@@ -1,5 +1,5 @@
 <section class="cover">
-#GUÍA HACKGRILS - FRONT DAY
+#GUÍA HACKGIRLS - FRONT DAY
 
 <pre>
 
@@ -122,15 +122,13 @@ Muestra en el navegador el título de la página, se escribe entre las marcas `<
 
 ![imagen del titulo](images/ScreenTitleHack.png)
 
-<div class="highlight info yellow">
+<div class=" info yellow">
 Cabe destacar que Los bookmarks ocupan el título de la página cuando se guarda, además tiene mucho valor en el SEO de un sitio web.
 </div>
 
 
 ##Codificación
 Agregaremos la codificación (standard que define el cómo se muestran las letras en el html) para que el navegador muestre los textos correctamente y entienda cuando hemos agregado una letra distinta, como por ejemplo la ñ. Para agregar esto hay que agregar la siguiente línea dentro de las marcas `<head>` `</head>` :
-
-las letras que acepta, por defecto no acepta las ñ
 
 `<meta charset="utf-8">`
 
@@ -160,7 +158,7 @@ Son diversos los atributos y valores que se pueden pasar a cada etiqueta, dos at
 La información de la página dentro del head es para el navegador, la información que está dentro del cuerpo es para el usuario. 
 
 <div class="info yellow">
-El navegador lee dentro de ambas etiquetas, pero las del head no las muestras, las ocupa para determinar ciertoas parámetros, en cambio el body se lo muestra al usuario.
+El navegador lee dentro de ambas etiquetas, pero las del head no las muestras, las ocupa para determinar ciertos parámetros, en cambio el body se lo muestra al usuario.
 </div>
 
 ![cabeza y cuerpo](images/cabezacuerpo.png)
