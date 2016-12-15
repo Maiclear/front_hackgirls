@@ -233,7 +233,7 @@ Puedes agregar la cantidad y largo que quieras.
 Una página web también tiene títulos!
 La marca para los títulos es `<h>` **más** un número del `1` al `6`. Siendo `<h1>` para el título principal o con mayor importancia y `<h6>` para el subtítulo del subtítulo del subtítulo del subtítulo del subtítulo del título!
 
-por ejemplo escribamos en nuestro archivo index.html:
+Por ejemplo escribamos en nuestro archivo index.html:
 
 ~~~html
 hola a todos !!!
@@ -267,7 +267,7 @@ La etiqueta para agregar imágenes es
 <img src=" " alt=" ">
 ~~~
 
-Donde `src` es *source* , que en español es fuente y que es un **atributo** de la etiqueta de imágen. `alt` es otro **atributo** de la etiqueta `img`, que te permite describir(brevemente), la imagen en caso de que no se pueda cargar la imagen por escases de internet, o en navegadores de solo texto.
+Donde `src` es *source* , que en español es fuente y que es un **atributo** de la etiqueta de imágen. `alt` es otro **atributo** de la etiqueta `img`, que te permite describir(brevemente) la imagen en caso de que no se pueda cargar por escases de internet, o en navegadores de solo texto.
 Esta etiqueta no necesita cerrarse como lo hacen las anteriores.
 	
 Para agregar imágenes utilizando esa etiqueta puedes hacerlo de dos maneras:
@@ -371,6 +371,8 @@ Ahora trata de transformar una imagen en hipervículo.
 Si necesitas ayuda, no dudes en preguntar a tu mentor.
   
 </div>	
+
+***
 
 Hagamos un pueqeño resumen de lo que hemos aprendido:
 
