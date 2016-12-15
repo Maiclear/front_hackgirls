@@ -10,11 +10,11 @@
 
 #Introducción
 para que se hace el evento....blabla
-que es lo que se va a ver durante el día, que se logragrá al final del día.
+que es lo que se va a ver durante el día, que se logrará al final del día.
 
 #Qué se necesita:
 Solo un navegador( puede ser Firefox, Safari, Chrome, etc...) y editor de texto [Sublime Text](https://www.sublimetext.com/) ( u otro).
-Desacarga Sublime Text [aquí](https://www.sublimetext.com/).
+Descarga Sublime Text [aquí](https://www.sublimetext.com/).
 
 
 #Qué es una página web
@@ -22,7 +22,7 @@ Pues eso de entrada podemos preguntarnos qué es una página web. Habrían dos r
 
 Para el **usuario** una página WEB es una pantalla en su monitor que le muestra la información que va buscando y enlaces a otros sitios relacionados.
 
-Para el **diseñador** una página WEB es un documento construído para mostrar información en la pantalla de un monitor, que contiene además de la información una serie de instrucciones para indicar como se ha de mostrar esa información. Estas instrucciones se escriben siguiendo un lenguaje llamado HTML.
+Para el **diseñador** una página WEB es un documento construido para mostrar información en la pantalla de un monitor, que contiene además de la información una serie de instrucciones para indicar como se ha de mostrar esa información. Estas instrucciones se escriben siguiendo un lenguaje llamado HTML.
 
 Una serie de páginas web interconectas e interrelacionadas de alguna forma (el mismo tema, el mismo objetivo...) forman un sitio web, que habitualmente está almacenado en un servidor.
 
@@ -267,11 +267,11 @@ La etiqueta para agregar imágenes es
 <img src=" " alt=" ">
 ~~~
 
-Donde `src` es *source* , que en español es fuente y que es un **atributo** de la etiqueta de imágen. `alt` es otro **atributo** de la etiqueta `img`, que te permite describir(brevemente) la imagen en caso de que no se pueda cargar por escases de internet, o en navegadores de solo texto.
+Donde `src` es *source* , que en español es fuente y que es un **atributo** de la etiqueta de imagen. `alt` es otro **atributo** de la etiqueta `img`, que te permite describir(brevemente) la imagen en caso de que no se pueda cargar por escasez de internet, o en navegadores de solo texto.
 Esta etiqueta no necesita cerrarse como lo hacen las anteriores.
 	
 Para agregar imágenes utilizando esa etiqueta puedes hacerlo de dos maneras:
-`-`Directo de una URL de ineternet.
+`-`Directo de una URL de internet.
 `-`Desde una imagen desde tu proyecto (desde tu computador).
 
 ##### Imágenes Desde internet:
@@ -280,7 +280,7 @@ Buscas en el google la imagen que quieras, y luego haciendo click en "ver imagen
 
 ![imagen universo](images/universo.png)
 
-Esa url debes copiarla y pegarla detro de los `" "` del source
+Esa url debes copiarla y pegarla dentro de los `" "` del source
 
 ~~~html
 <img src="http://www.muycomputer.com/wp-content/uploads/2016/01/Universo.jpg" alt="imagen universo">
@@ -314,7 +314,7 @@ Refrescamos el navegador:
 
 #####Imágenes desde el computador:
 
-Para esto debes crearte una carpeta **dentro** de tu proyecto llamada *images* y ahí ir integrando las imagenes que quieres en tu proyecto:
+Para esto debes crearte una carpeta **dentro** de tu proyecto llamada *images* y ahí ir integrando las imágenes que quieres en tu proyecto:
 
 ~~~
 proyecto_web
@@ -352,11 +352,11 @@ Aquí se está transformando a la frase *Link al evento* en un hipervínculo. Y 
 
 ![imagen del link](images/link.png)
 
-Por ende lo que hace esta etiqueta es darle la **propiedad de hipervículo** al contenido de ésta, apuntándolo al link que se encuentra en `href`
+Por ende lo que hace esta etiqueta es darle la **propiedad de hipervínculo** al contenido de ésta, apuntándolo al link que se encuentra en `href`
 
 Si pongo link sin `href`, no me llevará a ninguna parte. Y si al link no le pongo texto(contenido) ,pero si `href`, no se podrá ver el link por ninguna parte y por ende no se podrá hacer nada.
 
-Si yo quisiera que el lnk me habriera en una página nueva, hay que agregarle a la etiqueta el **atributo** `target="_blank"`, quedando de esta forma:
+Si yo quisiera que el link me abriera en una página nueva, hay que agregarle a la etiqueta el **atributo** `target="_blank"`, quedando de esta forma:
 
 ~~~html
 <a href="https://www.facebook.com/events/2162321913993416/" target="_blank" > Link al evento </a>
@@ -367,14 +367,14 @@ Si yo quisiera que el lnk me habriera en una página nueva, hay que agregarle a 
 
 
 <div class="yellow">
-Ahora trata de transformar una imagen en hipervículo.
+Ahora trata de transformar una imagen en hipervínculo.
 Si necesitas ayuda, no dudes en preguntar a tu mentor.
   
 </div>	
 
 ***
 
-Hagamos un pueqeño resumen de lo que hemos aprendido:
+Hagamos un pequeño resumen de lo que hemos aprendido:
 
 ~~~html
 <!DOCTYPE html>
@@ -426,7 +426,7 @@ Esto se vería así:
 ### listas ordenadas:
 Para definir una lista de elementos ordenados ocuparemos la etiqueta `<ol>`, pero dentro de esta lista debemos definir elementos, eso lo haremos con la etiqueta `<li>` 
 
-Las listas ordenadas tienen un número o letra, esto lo modifcaremos más adelante con CSS.
+Las listas ordenadas tienen un número o letra, esto lo modificaremos más adelante con CSS.
 
 ~~~html
 <h3> Esta es una lista ordenada </h3>
@@ -505,14 +505,14 @@ La etiqueta span es similar a los divs pero sirve para etiquetar texto, una part
 
 
 ##El inspector de elementos
-El inspector de elementos, es un aherramienta que podemos abrirla haciendo click derecho sobre la página y luego inspect nos muestra el código completo de la página y nos permite modificarlo. Con esta herramienta pueden ver el código de cualquier página web. 
+El inspector de elementos, es una herramienta que podemos abrirla haciendo click derecho sobre la página y luego inspect nos muestra el código completo de la página y nos permite modificarlo. Con esta herramienta pueden ver el código de cualquier página web. 
 
 Puedes aprender más sobre él [aquí](https://developer.mozilla.org/es/docs/Tools/Page_Inspector)
 
 ![inspector de elementos](images/inspect.png)
 
 <div class="yellow">
-Juega un rato con él, inspecciona lo que llevas de tu página, y mira sitios de tu interes.
+Juega un rato con él, inspecciona lo que llevas de tu página, y mira sitios de tu interés.
 </div>	
 
 
@@ -521,7 +521,7 @@ Ahora vamos a saltar al diseño de nuestra página web, luego continuaremos con 
 
 ![imagen de html css y js](images/htmlcssjs.png)
 
-Nosotros estabamos aprendiendo HTML, que vendría siendo el esqueleto de nuestro sitio web, ahora le añadiremos la "piel", el diseño, y eso lo hacemos con CSS.
+Nosotros estábamos aprendiendo HTML, que vendría siendo el esqueleto de nuestro sitio web, ahora le añadiremos la "piel", el diseño, y eso lo hacemos con CSS.
 
 #¿Qué es CSS?
 CSS es acrónimo de Cascading Style Sheet, o sea hojas de estilo que se pueden incorporar dentro de HTML para darle forma y color a nuestra voluntad.
