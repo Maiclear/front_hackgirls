@@ -586,6 +586,7 @@ etiqueta {
 	propiedad: valor;
 }
 ~~~
+####Color:
 
 Por ejemplo empecemos por cambiarle el color a la letra de algún título.
 
@@ -636,8 +637,27 @@ h1 {
 ![imagen de estilo](images/estilo.png)
 
 
-Lo que hace el código anterior es tomar todas las etiquetas tipo `h1` y darles el color rojo.
+Lo que hace el código anterior es tomar todas las etiquetas tipo `h1` y darles el color rojo. Siempre debes escribir los colores en inglés.
 
+Qué pasa si quiero que toda mi página tenga un color de fondo?
+Bueno sabemos que todo el código de nuestra página de encuentra dentro de las etiquetas de `<body>` verdad?
+
+Pues entonces pongámosle un color de fondo:
+
+~~~css
+body {
+	background-color: #FCFFF0;
+}
+~~~
+
+Quedando así:
+
+![imagen de pag con fondo](images/fondo.png)
+
+
+Vemos que ahora tenemos toda la página con un color distinto al por defecto que es blanco.
+
+Nótese también que ahora no se utilizó darle el color nombrándolo, sino que se utilizó el sistema hexagesimal.
 
 
 
