@@ -5,10 +5,6 @@
 
 ![logo emprendedoras](images/logo_emp.png)
 
-
-
-
-
 </section>
 <section>
 
@@ -17,8 +13,8 @@ para que se hace el evento....blabla
 que es lo que se va a ver durante el día, que se logragrá al final del día.
 
 #Qué se necesita:
-Solo un navegador( puede ser Firefox, Safari, Chrome, etc...) y editor de texto [Sublime](https://www.sublimetext.com/) ( u otro).
-Desacarga Sublime [aquí](https://www.sublimetext.com/).
+Solo un navegador( puede ser Firefox, Safari, Chrome, etc...) y editor de texto [Sublime Text](https://www.sublimetext.com/) ( u otro).
+Desacarga Sublime Text [aquí](https://www.sublimetext.com/).
 
 
 #Qué es una página web
@@ -34,9 +30,10 @@ Una serie de páginas web interconectas e interrelacionadas de alguna forma (el 
 #Comenzamos:
 Vamos a crear un proyecto totalmente desde cero.
 Para eso vamos a crear una carpeta nueva en el escritorio. Le puedes llamar como tu quieras, como por ejemplo "proyecto web".
-Luego abrimos la carpeta  "proyecto web" en Sublime (tu editor de texto).
-`–`Puede ser arrastrando la carpeta hacia el editor de texto
-`_`o abriéndola desde el editor de texto.
+Luego abrimos la carpeta  "proyecto web" en Sublime Text (tu editor de texto).
+
+- Puede ser arrastrando la carpeta hacia el editor de texto</li>
+- O abriéndola desde el editor de texto.</li>
 
 Ahora creamos un archivo nuevo llamado index.html 
 Esto se hace escribiendo index.html en la primera línea.
@@ -44,15 +41,19 @@ Esto se hace escribiendo index.html en la primera línea.
 ~~~html
 index.html
 ~~~
-*Cada vez que salga esta sintaxis en la guía, significa que debes escribir esto en Sublime (en el editor de texto).*
+*Cada vez que salga esta sintaxis en la guía, significa que debes escribir esto en Sublime Text (en el editor de texto).*
 
 
-Luego guardamos(grabamos).
+Luego guardamos (grabamos).
 
-![imagen de sublime con index.html](images/sublime_index2.png)
+![imagen de Sublime Text con index.html](images/sublime_index2.png)
 
 Una vez guardado, puedes borrar la primera línea. El archivo ya quedó guardado  como index.html.
-El que sea .html, dice que es un archivo que lee HTML.
+
+¿Por qué llamar al archivo de inicio como index?
+Porque es una convención, se subentiende que es el archivo índice que inicia una página web.
+
+El que sea .html, dice que es un archivo que se interpretará como HTML.
 Ahora este archivo puedes abrirlo en tu navegador haciendo click con el botón derecho sobre el nombre y eligiendo la opción "Open in browser"/"Abrir en navegador", pero antes de hacerlo escribe en él "hola a todos !!!".
 
 ~~~html
@@ -70,15 +71,15 @@ Felicidades!!	Ya estás escribiendo tu primera página web!!!
 #¿Qué es HTML?
 ***
 
-HTML es un simple código que es interpretado por tu navegador web - como Chrome, Firefox o Safari - para mostrar una página web al usuario.
+HTML es un simple código que es interpretado por el navegador web - como Chrome, Firefox o Safari - para mostrar una página web al usuario.
 
 HTML significa "HyperText Markup Language" - en español, **Lenguaje de Marcas** de HyperTexto. **HyperText** significa que es un tipo de texto que soporta hipervínculos entre páginas. **Marcado** significa que hemos tomado un documento y lo marca con código para decirte cómo interpretar la página (en este caso, un navegador).
 
-HTML es un lenguaje de **marcas**, cada una comenzando con `<` y terminando con `>`. Estas marcas definen **propiedades**, la **importancia** y el **significado semántico** del contenido que envuelven.
+HTML es un lenguaje de **marcas**, cada una comenzando con `<` y terminando con `>`. Estas etiquetas definen **propiedades**, la **importancia** y el **significado semántico** del contenido que envuelven.
 
-![imamen html lenguaje de marcas](images/html_marcas.png)
+![imagen html lenguaje de marcas](images/html_marcas.png)
 
-Una página web entonces, es un archivo que contiene un conjunto de esas marcas, el navegador puede leer estos archivos HTML y con eso mostrar las páginas.
+Una página web entonces es un archivo que contiene un conjunto de marcas ó etiquetas y que el navegador lee estos archivos HTML y con eso mostrar las páginas.
 
 ## Estructura de HTML
 HTML tiene una **cabeza** (*head*) y un **cuerpo** (*body*), la cabeza contiene toda la información que es para el **navegador**, el cuerpo de la página contiene toda la información que es para el **usuario**. Dentro de las etiquetas HTML se encuentra todo el contenido de la página, y dentro de ellas están los dos bloques previamente mencionados.
@@ -92,19 +93,20 @@ La estructura de una página en HTML es la siguiente:
 	<title></title>
 </head>
 <body>
-    <!-- Aquí va todo lo que quieras agregar -->
+    <!-- Aquí va el contenido de la página web -->
 </body>
 </html>
 ~~~
 
-El `doctype` es la primera etiqueta y le dice al navegador como debe leer el resto del documento, el doctype especificado es el de HTML5, el cuál es el estándar de hoy. 
+El `doctype` (o tipo de documento) es la primera etiqueta que leeremos y le indica al navegador como debe interpretar el resto del documento. En el ejemplo veremos que el doctype especificado es de HTML5, el cuál es el estándar de hoy. 
 
-En HTML5 la etiqueta `<head>` puede ser omitida, en ese caso todo lo que esté antes de body será considerado como head.
+La etiqueta `<html>` especifica que desde ese punto en adelante todo lo que venga deberá ser interpretado como HTML.
 
-La etiqueta `<html>` especifica que todo lo que está dentro es HTML.
+En HTML5 la etiqueta `<head>` puede ser omitida, en ese caso todo lo que esté antes de body será considerado como head. Por otro lado, esta es una etiqueta que especifica el contenido que se le entregará al navegador y que sea necesario para mostrar correctamente la página. Contendrá información variada, desde dónde encontrar las hojas de estilo o los íconos, hasta cuál es el título del sitio o sencillamente cómo debe manejar la página en el caso de que tenga que adaptarse a distintos tamaños de pantalla.
+
 
 ##El título
-Muestra en el navegador el título de la página, se escribe entre las marcas `<title>` `</title>`
+Muestra en el navegador el título de la página, se escribe entre las marcas `<title>` y `</title>` y tiene la función de ser una guía visual del contenido de la ventana o del tab del navegador.
 
 ~~~html
 <!DOCTYPE html>
@@ -120,13 +122,15 @@ Muestra en el navegador el título de la página, se escribe entre las marcas `<
 
 ![imagen del titulo](images/ScreenTitleHack.png)
 
-<div class="info yellow">
+<div class="highlight info yellow">
 Cabe destacar que Los bookmarks ocupan el título de la página cuando se guarda, además tiene mucho valor en el SEO de un sitio web.
 </div>
 
 
 ##Codificación
-La codificación (las letras que acepta, por defecto no acepta las ñ), para agregar esto hay que agregar la siguiente línea dentro de las marcas `<head>` `</head>` :
+Agregaremos la codificación (standard que define el cómo se muestran las letras en el html) para que el navegador muestre los textos correctamente y entienda cuando hemos agregado una letra distinta, como por ejemplo la ñ. Para agregar esto hay que agregar la siguiente línea dentro de las marcas `<head>` `</head>` :
+
+las letras que acepta, por defecto no acepta las ñ
 
 `<meta charset="utf-8">`
 
@@ -145,7 +149,7 @@ La página debería quedar así:
 </html>
 ~~~
 
-<div class=" info yellow"> Sin el meta charset los tildes y ñ no se verán correctamente dentro de nuestro documento </div>
+<div class=" info yellow"> Sin el meta charset los tildes y ñ (caracteres especiales) no se verán correctamente dentro de nuestro documento </div>
 
 ##Atributos y valores
 En la etiqueta `<meta charset="utf-8">` vemos que hay algo nuevo que no habíamos visto en otras etiquetas, en primer lugar la marca no se cierra, y la regla es simple, si la etiqueta no tiene contenido no se cierra, y para pasarle valores adicionales se ocupan **atributos** y **valores**, donde `charset` sería el *atributo* y `utf-8` el *valor*.
@@ -198,12 +202,13 @@ Al refrescar el navegador, éste te leerá de la siguiente forma:
 
 ![imgen de no parrafos](images/noparrafos.png)
 
-Si te fijas no respeta la sintaxis de párrafos! Y te lee como si estuviera todo escrito en una misma línea.
-Lo que pasa es que HTML es un lenguaje de marcas, entonces para separar el texto y que esté en otra línea deben de existir marcas de por medio.
-Vamos a aprender la 1º marca y la más sencilla de todas, la marca `p`
-Se abre con `<p>` y se cierra con `</p>`.
+Si te fijas, el navegador no respeta la sintaxis de párrafos y se lee como si estuviera todo escrito en una misma línea.
+Lo que pasa es que HTML es un lenguaje de marcas y para separar cada línea del texto y se pueda leer todo en varias líneas, deben de existir etiquetas de por medio.
+Vamos a aprender la primera etiqueta y la más sencilla de todas: `p`.
+
+Se abre con `<p>` y debido a que contiene información se debe cerrar con `</p>`.
 Todo el contenido que se encuentre dentro de estas marcas pasa a tener la **propiedad de párrafo**.
-Pro ejemplo, escribamos esto en nuestro archivo index.html:
+Por ejemplo, escribamos esto en nuestro archivo index.html:
 
 ~~~html
 hola a todos !!!
@@ -212,23 +217,23 @@ hola !!!
 
 <p> Hola a todos </p>
 
-<p> Este es mi segundo parrafo </p>
+<p> Este es mi segundo párrafo </p>
 ~~~
 *No olvidar que esto se escribe dentro del body.*
 
 Refrescamos el navegador y quedaría algo así:
 
-![imagen de parrafos](images/parrafos2.png)
+![imagen de párrafos](images/parrafos2.png)
 
 Ves, ahora **si** respeta que sea un párrafo!!!
 Puedes agregar la cantidad y largo que quieras.
 
-<div class="info yellow"> En sublime si se escribe "p" (o cualquier marca) y luego tab, se autocompleta la etiqueta por si sola. </div>
+<div class="info yellow"> En Sublime Text si se escribe "p" (o cualquier marca) y luego tab, se autocompleta la etiqueta por si sola. </div>
 
 ###Titulares (Títulos) y Sub titulares:
 
 Una página web también tiene títulos!
-La marca para los títulos es `<h>` **más** un número del `1` al `6`, siendo `<h1>` para el título principal y `<h6>` para el sub sub sub sub sub sub título!
+La marca para los títulos es `<h>` **más** un número del `1` al `6`. Siendo `<h1>` para el título principal o con mayor importancia y `<h6>` para el subtítulo del subtítulo del subtítulo del subtítulo del subtítulo del título!
 
 por ejemplo escribamos en nuestro archivo index.html:
 
@@ -264,8 +269,8 @@ La etiqueta para agregar imágenes es
 <img src=" " alt=" ">
 ~~~
 
-Donde `src` es *source* , que en español es fuente y que es un **atributo** de la etiqueta de imágen. `alt` es otro **atributo** de la marca `img`, que te permite describir(brevemente), la imagen en caso de que no se pueda cargar la imagen por escases de internet, o en navegadores de solo texto.
-Esta marca no necesita cerrarse como lo hacen las anteriores.
+Donde `src` es *source* , que en español es fuente y que es un **atributo** de la etiqueta de imágen. `alt` es otro **atributo** de la etiqueta `img`, que te permite describir(brevemente), la imagen en caso de que no se pueda cargar la imagen por escases de internet, o en navegadores de solo texto.
+Esta etiqueta no necesita cerrarse como lo hacen las anteriores.
 	
 Para agregar imágenes utilizando esa etiqueta puedes hacerlo de dos maneras:
 `-`Directo de una URL de ineternet.
@@ -333,12 +338,12 @@ Donde *images* es el nombre de la carpeta donde se encuentra mi imagen + `/` + *
 
 ###Links:
 
-Los links se hacen con la marca `<a>`:
+Los links se hacen con la etiqueta `<a>`:
 
 ~~~html
 <a href=" "> </a>
 ~~~
-Esta marca es un poco distinta a las demás, es una copia entre la de imágenes y las anteriores, ya que esta **si** se cierra.
+Esta etiqueta es un poco distinta a las demás, es una copia entre la de imágenes y las anteriores, ya que esta **si** se cierra.
 Siendo `href` el lugar donde se pone la página web donde apunta el contenido (link de referencia), y es un **atributo** de la etiqueta `<a>`
 Por ejemplo:
 
@@ -359,7 +364,7 @@ Si yo quisiera que el lnk me habriera en una página nueva, hay que agregarle a 
 <a href="https://www.facebook.com/events/2162321913993416/" target="_blank" > Link al evento </a>
 ~~~
 
-*Importante resaltar que todos los* **atributos** (`href` , `target`, etc...) *se escriben dentro de la marca `< ... >` no fuera, ya que pasaría a ser texto.*
+*Importante resaltar que todos los* **atributos** (`href` , `target`, etc...) *se escriben dentro de la etiqueta `< ... >` no fuera, ya que pasaría a ser texto.*
 
 
 
@@ -449,7 +454,7 @@ Para definir una lista de elementos desordenados ocuparemos la etiqueta `<ul>`, 
 ![imagen lista ordenada](images/listadesordenada.png)
 ###Tablas
 
-Es posible agregar tablas con datos ocupando la marca `<table>`, dentro de una tabla debemos especificar las filas y las celdas dentro de las filas utilizando `<tr>` y `<td>` cada marca tr especifica una nueva fila, y cada marca td una celda.
+Es posible agregar tablas con datos ocupando la etiqueta `<table>`, dentro de una tabla debemos especificar las filas y las celdas dentro de las filas utilizando `<tr>` y `<td>` cada etiqueta tr especifica una nueva fila, y cada etiqueta td una celda.
 
 ~~~html
 <table>
@@ -479,8 +484,8 @@ Es posible agregar tablas con datos ocupando la marca `<table>`, dentro de una t
 
 </table>
 ###Divs:
-Los divs son marcas que permiten agrupar a otras marcas, y le damos estilo propio a la agrupación (esto lo haremos más adelante con CSS).
-Envuelve varias etiquetas, y todas las marcas envueltas por él, están bajo la influencia del div.
+Los divs son etiquetas que permiten anidar a otras etiqueta y le damos estilo propio a la agrupación (esto lo haremos más adelante con CSS).
+Envuelve varias etiquetas, y todas las etiquetas envueltas por él, están bajo la influencia del div.
 
 ~~~html
 <div>
@@ -492,7 +497,7 @@ Envuelve varias etiquetas, y todas las marcas envueltas por él, están bajo la 
 
 ###Span:
 
-la marca span es similar a los divs pero sirve para marcar texto, una parte de una palabra, una palabra o más. (luego con CSS, hace más sentido, por ahora es bueno que la conozcas)
+La etiqueta span es similar a los divs pero sirve para etiquetar texto, una parte de una palabra, una palabra o más. (luego con CSS, hace más sentido, por ahora es bueno que la conozcas)
 
 ~~~html
 <p> Lorem <span> Ipsum </span> </p>
@@ -523,7 +528,7 @@ CSS es acrónimo de Cascading Style Sheet, o sea hojas de estilo que se pueden i
 
 Hay tres formas de incorporar CSS dentro de una página web.
 
-- La primera es con un conjunto de atributos y valores dentro de la marca del mismo HTML.
+- La primera es con un conjunto de atributos y valores dentro de la etiqueta del mismo HTML.
 
 - La segunda consiste en agregar el CSS dentro del head del mismo documento HTML.
 
@@ -551,7 +556,7 @@ Para agregar un link a un css ocuparemos la etiqueta link dentro del `<head>`.
 <link rel="stylesheet" type="text/css" href="miestilo.css">
 ~~~
 
-<div class="info yellow"> En sublime si se escribe link y luego se autocompleta con tab, la línea para agregar un CSS externo se escribe sola. </div>
+<div class="info yellow"> En Sublime Text si se escribe link y luego se autocompleta con tab, la línea para agregar un CSS externo se escribe sola. </div>
 
 Quedando de esta manera:
 
@@ -577,7 +582,7 @@ Con esto estamos agregando el CSS del archivo miestilo.css a nuestra página web
 Se escribe en el archivo de `.css`:
 
 ~~~css
-marca {
+etiqueta {
 	propiedad: valor;
 }
 ~~~
@@ -631,7 +636,7 @@ h1 {
 ![imagen de estilo](images/estilo.png)
 
 
-Lo que hace el código anterior es tomar todas las marcas tipo `h1` y darles el color rojo.
+Lo que hace el código anterior es tomar todas las etiquetas tipo `h1` y darles el color rojo.
 
 
 
