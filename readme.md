@@ -854,7 +854,7 @@ Para que funcione correctamente debemos tener cuidado de que los archivos CSS y 
 
 Para detectar si hay conflictos con las rutas que pusimos para los assets de bootstrap podemos utilizar el inspector de elementos en el tab network, ahí podemos ademas escoger un sub tab como CSS, en caso de que un archivo no lo encuentre se mostrará en rojo, esto normalmente indica que la dirección apuntada es incorrecta.
 
-![](guia 11 bootstrap/inspector.png)
+![](images/inspector.png)
 
 <aside class="warning"> Abrir el tab no es suficiente, hay que recargar la página con el tab network abierto para obtener la información. </aside>
 
@@ -874,12 +874,12 @@ Ejemplo de uso:
 </div>
 ~~~
 
-![](guia 11 bootstrap/jumbotron.png)
+![](images/jumbotron.png)
 
 ##Page Header
 El page-header es otro componente liviano que sirve para títulos de secciones, además puede acompañarse con otro texto de clase small para acompañar el contenido.
 
-![](guia 11 bootstrap/page-header.png)
+![](images/page-header.png)
 
 ~~~html
 <div class="page-header">
@@ -890,7 +890,7 @@ El page-header es otro componente liviano que sirve para títulos de secciones, 
 ##Container
 Es un contenedor que da margen de los bordes del sitio, bastante útil a la hora de mostrar texto.
 
-![](guia 11 bootstrap/container.png)
+![](images/container.png)
 
 En la imagen vemos dos párrafos uno con container y el otro sin, el que tiene container tiene margen respecto a los bordes de la página.
 
@@ -917,11 +917,11 @@ En la imagen vemos dos párrafos uno con container y el otro sin, el que tiene c
 	
 Un jumbotron puede ir dentro de un container y un container puede ir dentro de un jumbotron **No es lo mismo un container dentro de un jumbotron que un jumbotron dentro de un container**, esto es lo que estudiaremos a continuación.
 
-![](guia 11 bootstrap/jumbo-cont.png)
+![](images/jumbo-cont.png)
 
 Al ponerle un container el texto se alínea mejor, y aunque esté dentro de un jumbotron un container, y otro container esté fuera sin jumbotron, veremos que ambos textos quedan bien alineados.
 
-![](guia 11 bootstrap/jumbo-cont2.png)
+![](images/jumbo-cont2.png)
 
 ~~~html
 	<div class="jumbotron">
@@ -942,7 +942,7 @@ Al ponerle un container el texto se alínea mejor, y aunque esté dentro de un j
 
 Algo muy distinto sucede cuando ponemos el jumbotron dentro de un container.
 
-![](guia 11 bootstrap/cont-jumbotron.png)
+![](images/cont-jumbotron.png)
 
 Como vemos en la imagen nos damos cuenta que ahora el jumbotron no está pegado al borde de la página, y además ahora es el borde del jumbotron el que está alineado con el texto de los otros containers.
 
@@ -966,7 +966,7 @@ Esto lo podemos envolver dentro de un botón de forma sencilla.
 
 La lista de Glyphicons es bastante grande
 
-![](guia 11 bootstrap/glyphs.png)
+![](images/glyphs.png)
 
 se puede consultar en la: [documtación oficial](http://getbootstrap.com/components/#glyphicons-glyphs)
 
@@ -980,7 +980,7 @@ Con bootstrap podemos convertir una imagen responsive solo con agregar la clases
 
 `img-responsive` hace que la imagen tenga un **max-width** del 100%, recordemos que la diferencia entre width y max-width es que width altera el tamaño de todos los elementos mientras que **max-width** como dice su nombre afecta solo a los elementos que tienen un tamaño mayor que el espacio que tienen disponible.
 
-![](guia 11 bootstrap/img-responsive.png)
+![](images/img-responsive.png)
 
 Además hay clases que pueden ayudarnos a darle formas a las imágenes.
 
@@ -1013,7 +1013,7 @@ Los thumbnails permiten agregar estilos y bordes de forma sencilla a las imágen
 	</div>
 ~~~
 
-![](guia 11 bootstrap/thumbnail.png)
+![](images/thumbnail.png)
 
 <aside class="info"> **To thumbnail or not to thumbnail** <br>
 La clase thumbnail puede aplicarse directamente a la imagen o a un div superior, en caso de aplicarse a la imagen perderemos otras propiedades como el redondeado y no podremos poner otro contenido dentro del thumbnail.
@@ -1074,7 +1074,7 @@ Si vamos agregar texto o imagenes sería bueno envolver las columnas en un conta
 </section>
 ~~~
 	
-![](/Users/gonzalosanchez/Dropbox/Desafiolatam/Material Bootcamp/Bootcamp G3/guia 11 bootstrap/columns.png)
+![](/Users/gonzalosanchez/Dropbox/Desafiolatam/Material Bootcamp/Bootcamp G3/images/columns.png)
 
 
 ###Mobile First
@@ -1087,7 +1087,7 @@ A menos que especifiquemos lo contrario.
 
 Al disminuir el ancho de la página (o al verda desde un teléfono) veremos que la grilla se rompe.
 
-![](guia 11 bootstrap/9 mobile-first.png)
+![](images/9 mobile-first.png)
 
 ###Media queries
 La grilla contiene las siguientes media queries que debemos considerar:
