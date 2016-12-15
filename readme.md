@@ -1,7 +1,6 @@
 <section class="cover">
-#GUÍA HACKGIRLS - FRONT DAY
 
-<pre>
+GUÍA HACKGIRLS - FRONT DAY
 
 ![logo emprendedoras](images/logo_emp.png)
 
@@ -9,16 +8,34 @@
 <section>
 
 #Introducción
-para que se hace el evento....blabla
-que es lo que se va a ver durante el día, que se logrará al final del día.
 
-#Qué se necesita:
-Solo un navegador( puede ser Firefox, Safari, Chrome, etc...) y editor de texto [Sublime Text](https://www.sublimetext.com/) ( u otro).
+En Chile, A nivel urbano nacional, el 20% de las mujeres ocupadas en Chile son “trabajadoras por cuenta propia”, según la encuesta Voz de Mujer (cifra que coincide con la entregada por la última Casen). En tanto, solo el 3% son “patrón o empleadora”, lo cuál correspondería a empresarias.
+
+El propósito de Emprededoras.club es cambiar esta realidad, a través de la entrega de conocimientos y herramientas que faciliten la creación de empresas y tecnología.
+
+Front Day es un evento con el objetivo de entregar conocimientos básicos de programación web a mujeres programadoras para que puedan construir y supervisar la construcción de las páginas web de sus empresas.
+
+#Qué se necesita para este taller:
+Un navegador (puede ser Firefox, Safari, Chrome, etc...) y un editor de texto [Sublime Text](https://www.sublimetext.com/) ( u otro).
 Descarga Sublime Text [aquí](https://www.sublimetext.com/).
 
+Para el evento solo necesitas un navegador y un editor de texto.
+
+Cómo navegador puedes ocupar alguno como:
+
+- Firefox
+- Safari
+- Chrome
+
+Cómo editor de texto te recomendamos:
+
+- [Sublime](https://www.sublimetext.com/)
+
+- [[Atom](https://atom.io).
 
 #Qué es una página web
-Pues eso de entrada podemos preguntarnos qué es una página web. Habrían dos respuestas: para el **usuario** y para el **diseñador**.
+
+De entrada podemos preguntarnos qué es una página web. Habrían dos respuestas: para el **usuario** y para el **diseñador**.
 
 Para el **usuario** una página WEB es una pantalla en su monitor que le muestra la información que va buscando y enlaces a otros sitios relacionados.
 
@@ -26,10 +43,12 @@ Para el **diseñador** una página WEB es un documento construido para mostrar i
 
 Una serie de páginas web interconectas e interrelacionadas de alguna forma (el mismo tema, el mismo objetivo...) forman un sitio web, que habitualmente está almacenado en un servidor.
 
+#Creando nuestra primera página web:
 
-#Comenzamos:
 Vamos a crear un proyecto totalmente desde cero.
+
 Para eso vamos a crear una carpeta nueva en el escritorio. Le puedes llamar como tu quieras, como por ejemplo "proyecto web".
+
 Luego abrimos la carpeta  "proyecto web" en Sublime Text (tu editor de texto).
 
 - Puede ser arrastrando la carpeta hacia el editor de texto</li>
@@ -41,8 +60,8 @@ Esto se hace escribiendo index.html en la primera línea.
 ~~~html
 index.html
 ~~~
-*Cada vez que salga esta sintaxis en la guía, significa que debes escribir esto en Sublime Text (en el editor de texto).*
 
+*Cada vez que salga esta sintaxis en la guía, significa que debes escribir esto en Sublime Text (en el editor de texto).*
 
 Luego guardamos (grabamos).
 
@@ -66,8 +85,6 @@ Entonces al abrirlo en el navegador te debería aparecer algo como esto:
 
 Felicidades!!	Ya estás escribiendo tu primera página web!!!
 
-
-
 #¿Qué es HTML?
 ***
 
@@ -82,7 +99,8 @@ HTML es un lenguaje de **marcas**, cada una comenzando con `<` y terminando con 
 Una página web entonces es un archivo que contiene un conjunto de marcas ó etiquetas y que el navegador lee estos archivos HTML y con eso mostrar las páginas.
 
 ## Estructura de HTML
-HTML tiene una **cabeza** (*head*) y un **cuerpo** (*body*), la cabeza contiene toda la información que es para el **navegador**, el cuerpo de la página contiene toda la información que es para el **usuario**. Dentro de las etiquetas HTML se encuentra todo el contenido de la página, y dentro de ellas están los dos bloques previamente mencionados.
+
+Un archivo HTML para poder ser interpretado correctamente deber tener una estructura. La estructura básica consiste en una **cabeza** (*head*) y un **cuerpo** (*body*), la cabeza contiene toda la información que es para el **navegador**, el cuerpo de la página contiene toda la información que es para el **usuario**. Dentro de las etiquetas HTML se encuentra todo el contenido de la página, y dentro de ellas están los dos bloques previamente mencionados.
 
 La estructura de una página en HTML es la siguiente:
 
