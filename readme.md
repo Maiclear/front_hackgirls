@@ -16,7 +16,7 @@ El propósito de Emprededoras.club es cambiar esta realidad, a través de la ent
 Front Day es un evento con el objetivo de entregar conocimientos básicos de programación web a mujeres programadoras para que puedan construir y supervisar la construcción de las páginas web de sus empresas.
 
 #Qué se necesita para este taller:
-Un navegador (puede ser Firefox, Safari, Chrome, etc...) y un editor de texto [Sublime Text](https://www.sublimetext.com/) ( u otro).
+Un navegador web y un editor de texto.
 Descarga Sublime Text [aquí](https://www.sublimetext.com/).
 
 Para el evento solo necesitas un navegador y un editor de texto.
@@ -31,7 +31,7 @@ Cómo editor de texto te recomendamos:
 
 - [Sublime](https://www.sublimetext.com/)
 
-- [[Atom](https://atom.io).
+- [Atom](https://atom.io).
 
 #Qué es una página web
 
@@ -146,7 +146,7 @@ Cabe destacar que Los bookmarks ocupan el título de la página cuando se guarda
 
 
 ##Codificación
-Agregaremos la codificación (standard que define el cómo se muestran las letras en el html) para que el navegador muestre los textos correctamente y entienda cuando hemos agregado una letra distinta, como por ejemplo la ñ. Para agregar esto hay que agregar la siguiente línea dentro de las marcas `<head>` `</head>` :
+Agregaremos la codificación (estándar que define el cómo se muestran las letras en el HTML) para que el navegador muestre los textos correctamente y entienda cuando hemos agregado una letra distinta, como por ejemplo la ñ. Para agregar esto hay que agregar la siguiente línea dentro de las marcas `<head>` `</head>` :
 
 `<meta charset="utf-8">`
 
@@ -180,8 +180,6 @@ El navegador lee dentro de ambas etiquetas, pero las del head no las muestras, l
 </div>
 
 ![cabeza y cuerpo](images/cabezacuerpo.png)
-
-
 
 
 
@@ -241,10 +239,15 @@ Refrescamos el navegador y quedaría algo así:
 
 ![imagen de párrafos](images/parrafos2.png)
 
-Ves, ahora **si** respeta que sea un párrafo!!!
-Puedes agregar la cantidad y largo que quieras.
+Gracias a la etiqueta `<p>` Ahora **si** respeta que sea un párrafo!!!
+Puedes agregar la cantidad y largo de contenido que quieras.
 
-<div class="info yellow"> En Sublime Text si se escribe "p" (o cualquier marca) y luego tab, se autocompleta la etiqueta por si sola. </div>
+# Autocompletado con Sublime
+
+En Sublime Text si se escribe "p" (o cualquier marca) y luego tab, se autocompleta la etiqueta por si sola. Para que este truco funcione es necesario que el editor tenga identificado el tipo de archivo, por defecto lo detecta por la extensión original, pero se puede cambiar en la parte inferior izquierda.
+
+![imagen index_img](images/sublime_file_ext.png)
+
 
 ###Titulares (Títulos) y Sub titulares:
 
