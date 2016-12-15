@@ -745,9 +745,9 @@ font family acepta diversas tipografías simultáneamente a modo de fallback, o 
 ## Googlefonts
 
 [https://www.google.com/fonts
-]() es una página web que permite cargar de forma sencilla diversas tipografías no tan comunes dentro de tu sitio, 
+](www.google.com/fonts) es una página web que permite cargar de forma sencilla diversas tipografías no tan comunes dentro de tu sitio, 
 
-![](guia 7/google fonts.png)
+![](images/google fonts.png)
 
 Para utilizarla debes hacer click en la opción quick use de la fuente respectiva, luego seleccionar los pesos de la fuente.
 
@@ -1073,8 +1073,8 @@ Si vamos agregar texto o imagenes sería bueno envolver las columnas en un conta
 	</div>
 </section>
 ~~~
-	
-![](/Users/gonzalosanchez/Dropbox/Desafiolatam/Material Bootcamp/Bootcamp G3/images/columns.png)
+
+![](images/columns.png)
 
 
 ###Mobile First
