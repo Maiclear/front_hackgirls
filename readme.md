@@ -251,8 +251,9 @@ En Sublime Text si se escribe "p" (o cualquier marca) y luego tab, se autocomple
 
 ###Titulares (Títulos) y Sub titulares:
 
-Una página web también tiene títulos!
-La marca para los títulos es `<h>` **más** un número del `1` al `6`. Siendo `<h1>` para el título principal o con mayor importancia y `<h6>` para el subtítulo del subtítulo del subtítulo del subtítulo del subtítulo del título!
+Una página web también tiene titulares, al igual que un periódico!
+
+La marca para los títulares es `<h>` **más** un número del `1` al `6`. Siendo `<h1>` para el títular principal o con mayor importancia y `<h6>` para el subtítulo del subtítulo del subtítulo del subtítulo del subtítulo del título!
 
 Por ejemplo escribamos en nuestro archivo index.html:
 
@@ -290,14 +291,14 @@ La etiqueta para agregar imágenes es
 
 Donde `src` es *source* , que en español es fuente y que es un **atributo** de la etiqueta de imagen. `alt` es otro **atributo** de la etiqueta `img`, que te permite describir(brevemente) la imagen en caso de que no se pueda cargar por escasez de internet, o en navegadores de solo texto.
 Esta etiqueta no necesita cerrarse como lo hacen las anteriores.
-	
+
 Para agregar imágenes utilizando esa etiqueta puedes hacerlo de dos maneras:
 `-`Directo de una URL de internet.
 `-`Desde una imagen desde tu proyecto (desde tu computador).
 
 ##### Imágenes Desde internet:
 
-Buscas en el google la imagen que quieras, y luego haciendo click en "ver imagen" , ésta te llevará a una url terminada en .jpg o .png 
+Buscas en el google la imagen que quieras, y luego haciendo click en "ver imagen" , ésta te llevará a una url terminada en .jpg o .png
 
 ![imagen universo](images/universo.png)
 
@@ -341,8 +342,9 @@ Para esto debes crearte una carpeta **dentro** de tu proyecto llamada *images* y
 proyecto_web
 └───index.html
 	images
-    └─── ejemplo.jpg          
+    └─── ejemplo.jpg
 ~~~
+
 *Puede ser formato jpg, png, jpeg, ahí debes ver que formato es tu imagen. Importante que las imágenes estén en una carpeta que se llame images dentro de la carpeta de donde está tú proyecto*
 
 En ese ejemplo yo estoy agregando una imagen a mi carpeta *images* con el nombre de *ejemplo* y de formato *.jpg*
@@ -362,12 +364,13 @@ Los links se hacen con la etiqueta `<a>`:
 ~~~html
 <a href=" "> </a>
 ~~~
-Esta etiqueta es un poco distinta a las demás, es una copia entre la de imágenes y las anteriores, ya que esta **si** se cierra.
-Siendo `href` el lugar donde se pone la página web donde apunta el contenido (link de referencia), y es un **atributo** de la etiqueta `<a>`
-Por ejemplo:
+Esta etiqueta tiene el atributo href que es hacia adonde apunta, y contenido que muestra el texto, ya que tiene contenido esta etiqueta **si** se cierra.
+
+Veamos un ejemplo:
 
 ~~~html
 <a href="https://www.facebook.com/events/2162321913993416/">Link al evento</a>
+
 ~~~
 Aquí se está transformando a la frase *Link al evento* en un hipervínculo. Y al hacerle *click* en ella , te enviará al link escrito dentro de las `" "` del `href`
 
@@ -385,13 +388,10 @@ Si yo quisiera que el link me abriera en una página nueva, hay que agregarle a 
 
 *Importante resaltar que todos los* **atributos** (`href` , `target`, etc...) *se escriben dentro de la etiqueta `< ... >` no fuera, ya que pasaría a ser texto.*
 
-
-
 <div class="yellow">
 Ahora trata de transformar una imagen en hipervínculo.
 Si necesitas ayuda, no dudes en preguntar a tu mentor.
-  
-</div>	
+</div>
 
 ***
 
@@ -412,12 +412,12 @@ Hagamos un pequeño resumen de lo que hemos aprendido:
 
 <h3>Por más mujeres en emprendimiento y tecnología</h3>
 
-<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-Ipsam consequuntur omnis minima dolorem adipisci officiis enim 
-optio tenetur quos aliquid, saepe, corporis dignissimos? 
+<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+Ipsam consequuntur omnis minima dolorem adipisci officiis enim
+optio tenetur quos aliquid, saepe, corporis dignissimos?
 Harum debitis veritatis voluptas, illum iste deserunt.
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-Quo dolorem dignissimos expedita repellendus ducimus natus 
+Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+Quo dolorem dignissimos expedita repellendus ducimus natus
 possimus, molestiae architecto, aperiam officiis, amet consequatur,
  nisi. Est accusamus eum quos natus architecto modi.</p>
 
@@ -534,7 +534,13 @@ Puedes aprender más sobre él [aquí](https://developer.mozilla.org/es/docs/Too
 
 <div class="yellow">
 Juega un rato con él, inspecciona lo que llevas de tu página, y mira sitios de tu interés.
-</div>	
+</div>
+
+##Encontrando errores en una página web
+Una buena herramienta para detectar errores en tu página es w3c validator. Tiene diversas formas de validar, nosotros ocuparemos **Validate by direct input**, ahí podemos copiar el contenido de nuestra página y ver si hay errores de algún tipo.
+
+
+![W3C Validator](images/w3cvalidator.png)
 
 
 ***
