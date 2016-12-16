@@ -11,7 +11,7 @@ GUÍA HACKGIRLS - FRONT DAY
 
 En Chile, A nivel urbano nacional, el 20% de las mujeres ocupadas en Chile son “trabajadoras por cuenta propia”, según la encuesta Voz de Mujer (cifra que coincide con la entregada por la última Casen). En tanto, solo el 3% son “patrón o empleadora”, lo cuál correspondería a empresarias.
 
-El propósito de Emprededoras.club es cambiar esta realidad, a través de la entrega de conocimientos y herramientas que faciliten la creación de empresas y tecnología.
+El propósito de EmprededorasClub es cambiar esta realidad, a través de la entrega de conocimientos y herramientas que faciliten la creación de empresas y tecnología.
 
 Front Day es un evento con el objetivo de entregar conocimientos básicos de programación web a mujeres programadoras para que puedan construir y supervisar la construcción de las páginas web de sus empresas.
 

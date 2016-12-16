@@ -91,7 +91,11 @@ Si nos aparece lo siguiente
 Todo está funcionando. 
 
 ## Definiendo las secciones de nuestro landing
-Para construir nuestro landing lo primero que debemos es mirar nuestro diseño y segmentarlo en los diferentes bloques que estan propuestos, para definir cada bloque utilizaremos de forma correcta las etiquetas de HTML5 como header, footer, aside y section. Si quieres saber más de esto revisa el siguiente [link](http://www.w3schools.com/html/html5_semantic_elements.asp).
+Para construir nuestro landing lo primero que debemos es mirar nuestro diseño y segmentarlo en los diferentes bloques que estan propuestos, para definir cada bloque utilizaremos de forma correcta las etiquetas de HTML5 como header, footer, aside y section. 
+
+![imagen etique html5](images/sections.png)
+
+Si quieres saber más de esto revisa el siguiente [link](http://www.w3schools.com/html/html5_semantic_elements.asp).
 
 ![Bootstrap layout AI!](images/layout_landing_section.png)
 
@@ -251,9 +255,9 @@ Navbar ya nos provee con un pequeño bloque para colocar nuestro bloque. Acá co
 
 Si te fijas y vuelves a abrir la página ya verás el logo (no se verá del todo bien pero ya lo mejoraremos :D)
 
-Sigamos con las siguientes secciones. Ahora enfoquemonos en la siguiente sección. La siguiente sección tenemos menos elementos y es más simple. Acá tenemos un título de menor jerarquia (lo definiremos como h3), un texto y una imagen. 
+Sigamos con las siguientes secciones. Ahora enfoquemonos en la siguiente sección. La siguiente sección tenemos menos elementos y es más simple. Acá tenemos un título de menor jerarquia (lo definiremos como `<h3>`), un texto y una imagen. 
 
-```
+```html
 
   <section class="block">
     <div class="container">
@@ -273,6 +277,17 @@ Sigamos con las siguientes secciones. Ahora enfoquemonos en la siguiente secció
   </section>
 
 ```
+*Ojo que ya habíamos colocado dentro de la* `<section>` esto:
+
+~~~html
+<div class="container">
+    <div class="row">
+      
+    </div>
+  </div>
+~~~  
+*Por lo que si copias todo, pégalo sobre eso.*
+
 
 Si te fijas bien estoy definiendo columnas de 12, si bien no es necesario, lo definiremos para ser consistentes con el uso de columnas.
 
@@ -280,11 +295,30 @@ Probemos lo que llevamos ahora. Recuerda que solo estamos definiendo elementos e
 
 Sigamos con la siguiente sección
 
-// analogo a lo anterior (pendiente)
+Acá nuevamente tenemos un título de menor jerarquia (lo definiremos como `<h3>`), un texto, pero tenemos algo nuevo , un botón!
+Para éste utilizamos una etiqueta nueva llamada `<button>`(botón en inglés)
+y le agregamos las clases de botón que usa bootstrap.
+
+~~~html
+<div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h3 class="text-center">Lorem ipsum dolor sit amet</h3>
+          <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem possimus delectus, tempore ducimus aliquam quam cum, asperiores maxime earum error hic atque omnis voluptates. Consectetur dolor aut voluptas libero ea.</p>
+          <p class="text-center">
+            <button class="btn btn-primary">Inscribete!</button>
+          </p>
+        </div>
+      </div>
+</div>
+~~~
+
+Si te fijas, el botón se dejó dentro de un párrafo para darle la propiedad de alineamiento centrado (`class="text-center"`)
+
 
 Uff! ya estamos casi. nos queda la última sección. A diferencia de las anteriores esta la dividiremos en dos columnas. la primera será de 4 columnas y la segunda 8 para completar las 12 columnas que necesitamos. Por lo que nos quedaría de la siguiente forma:
 
-```
+```html
   <section class="block info">
     <div class="container">
       <div class="row">
@@ -299,8 +333,9 @@ Uff! ya estamos casi. nos queda la última sección. A diferencia de las anterio
   </section>
 ```
 
-En la columna de 4 colocaremos nuestra dirección de la siguiente forma
-```
+En la columna de 4 colocaremos nuestra dirección de la siguiente forma:
+
+```html
 <h3>Contacto</h3>
   <address>
     <strong>Twitter, Inc.</strong><br>
@@ -314,7 +349,7 @@ Estamos usando la etiqueta address que nos permite indicarle a los motores que e
 
 Ahora en la columna de 8, colocaremos el formulario
 
-```
+```html
  <h3>Suscribete</h3>
           <form class="form-inline">
          
@@ -328,7 +363,8 @@ Ahora en la columna de 8, colocaremos el formulario
 Para el formulario estamos usando los elementos de bootstrap que hace que nuestros form queden cool! si quieres saber más revisa la documentación de [boostrap referente a los formularios](http://getbootstrap.com/css/#forms)
 
 El bloque completo quedaría de la siguiente forma
-```
+
+```html
  <section class="block info">
     <div class="container">
       <div class="row">
@@ -359,7 +395,7 @@ El bloque completo quedaría de la siguiente forma
 
 Finalmente nos queda definir el pie de la página. Esto será simple y se reduce a lo siguiente
 
-```
+```html
   <footer>
     <div class="container">
       <div class="row">
