@@ -1066,16 +1066,39 @@ Para utilizar una grilla lo primero que debemos crear es un row (fila)
 
 Dentro de este row dispondremos de 12 columnas virtuales que podemos agrupar a nuestro antojo para poner contenido.
 
-
 ![imagen de grillas](images/grillas.png)
+
 
 ~~~html
 <div class="row">
-	<div class="col-md-6"> 
-	</div>
-	<div class="col-md-6"> 
-	</div>	
+  <div class="col-md-1">.col-md-1</div>
+  <div class="col-md-1">.col-md-1</div>
+  <div class="col-md-1">.col-md-1</div>
+  <div class="col-md-1">.col-md-1</div>
+  <div class="col-md-1">.col-md-1</div>
+  <div class="col-md-1">.col-md-1</div>
+  <div class="col-md-1">.col-md-1</div>
+  <div class="col-md-1">.col-md-1</div>
+  <div class="col-md-1">.col-md-1</div>
+  <div class="col-md-1">.col-md-1</div>
+  <div class="col-md-1">.col-md-1</div>
+  <div class="col-md-1">.col-md-1</div>
 </div>
+<div class="row">
+  <div class="col-md-8">.col-md-8</div>
+  <div class="col-md-4">.col-md-4</div>
+</div>
+<div class="row">
+  <div class="col-md-4">.col-md-4</div>
+  <div class="col-md-4">.col-md-4</div>
+  <div class="col-md-4">.col-md-4</div>
+</div>
+<div class="row">
+  <div class="col-md-6">.col-md-6</div>
+  <div class="col-md-6">.col-md-6</div>
+</div>
+
+
 ~~~
 
 Dentro de cada una estas columnas podemos agregar todo el contenido que queramos y este contenido se adaptará dentro de las columnas.
@@ -1099,7 +1122,6 @@ Entonces resumiendo: Se empieza por añadiendo la clase `.row`, esto creará un 
 
 ###Utilizando columnas para dispositivos específicos
 
-El sistema de grillas de Bootstrap cuenta con cuatro clases: `xs` extra small devices, para dispositivos con pantalla pequeña, normalmente móviles, sm small devices, para dispositivos con pantalla con una resolución mayor o igual a 768px que suelen ser tablets, md medium devices, por ejemplo para portátiles y ld larger desktops, para resoluciones de pantalla muy altas.
 
 Es bueno analizar de que palabras vienen los nombres de reglas de estilo que provee Bootstrap:
 
