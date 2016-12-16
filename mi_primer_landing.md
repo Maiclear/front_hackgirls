@@ -198,7 +198,7 @@ Al colocar este código ya podrías ver en tu navegador como va quedando el land
 
 Hablemos de este código que acabamos de pegar.
 
-El elemento más complejo de **este bloque** es el menú. Bootstrap nos provee un menú ya construido y solo debemos copiar y pegar (si como lo escuhas copiar y pegar pero con un poco de talento :D).
+El elemento más complejo de **este bloque** es el menú (o navbar). Bootstrap nos provee un menú ya construido y solo debemos copiar y pegar (si como lo escuhas copiar y pegar pero con un poco de talento :D).
 
 El menú por si solo está definido en el siguiente bloque:
 
@@ -233,12 +233,13 @@ El menú por si solo está definido en el siguiente bloque:
                     </div><!-- /.container-fluid -->
                   </nav>
 ```
+*Recuerda que esto ya está en el código que pegamos anteriormente, no es necesario que lo vuelvas a copiar/pegar*
 
-si todo funciona correctamente, ya deberíamos tener nuestra página con un menú que funciona en pantallas pequeñas. 
+Si todo funciona correctamente, ya deberíamos tener nuestra página con un menú que funciona en pantallas pequeñas. 
 
-__¿Y el logo donde lo colocamos?__
+__¿Y el logo donde fue que lo colocamos?__
 
-Navbar provee un pequeño bloque para colocar nuestro bloque. Acá colocaremos el logotipo de nuestro diseño. este bloque debería quedar así
+Navbar ya nos provee con un pequeño bloque para colocar nuestro bloque. Acá colocaremos el logotipo de nuestro diseño. Este bloque debería quedar así
 
 ```html
 <a class="navbar-brand" href="#">
@@ -246,7 +247,7 @@ Navbar provee un pequeño bloque para colocar nuestro bloque. Acá colocaremos e
 </a>
 ```
 
-¿Funciona la imagen? la respuesta en no :/. esto se debe a que debemos cargar la imagen en nuestro proyecto. Para ello crearemos una carpeta al mismo nivel que css, y le colocaremos el nombre de __images__ dentro de ella copiamos la imagen del logo (la puedes descargar desde [acá](images/demo/images/latam_logo.png))
+¿Funciona la imagen? la respuesta es no :/. esto se debe a que debemos cargar la imagen en nuestro proyecto. Para ello crearemos una carpeta al mismo nivel que css, y le colocaremos el nombre de __images__ dentro de ella copiamos la imagen del logo (la puedes descargar desde [acá](demo/images/latam_logo.png))
 
 Si te fijas y vuelves a abrir la página ya verás el logo (no se verá del todo bien pero ya lo mejoraremos :D)
 
