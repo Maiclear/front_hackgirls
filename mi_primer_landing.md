@@ -78,7 +78,11 @@ Este contenido representa **Basic template** de bootstrap y será nuestro punto 
 
 ___¿Cómo podemos saber si bootstrap se instaló de forma correcta?___
 
-Entre la etiquetas <body>  y </body> agregar <input type="button" value="Funciono!!" class="btn btn-primary">
+Entre la etiquetas `<body>`  y `</body>` agregar 
+
+~~~html
+<input type="button" value="yeah!!" class="btn btn-primary">
+~~~
 
 Si nos aparece lo siguiente
 
@@ -95,7 +99,7 @@ Lo que se presenta en la foto anterio lo debemos llevar código, para ello escri
 
 El esqueleto de nuestro landing lo definiremos de la siguiente forma
 
-```
+```html
   <header>
 
   </header>
@@ -118,10 +122,11 @@ El esqueleto de nuestro landing lo definiremos de la siguiente forma
 
 ```
 
-Si te fijas etiquete las secciones con algunas clases, esto lo veremos más adelante pero será de mucha utilidad para aplicar nuestras reglas de css.
+Si te fijas se etiquetó las secciones con algunas clases, esto lo veremos más adelante pero será de mucha utilidad para aplicar nuestras reglas de css.
 
 Dentro de cada bloque colocaremos lo siguiente
-```
+
+```html
 <div class="container">
     <div class="row">
       

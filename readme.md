@@ -31,8 +31,6 @@ Cómo editor de texto te recomendamos:
 
 - [Sublime](https://www.sublimetext.com/)
 
-- [Atom](https://atom.io).
-
 #Qué es una página web
 
 De entrada podemos preguntarnos qué es una página web. Habrían dos respuestas: para el **usuario** y para el **diseñador**.
