@@ -1095,9 +1095,11 @@ Si vamos agregar texto o imagenes sería bueno envolver las columnas en un conta
 
 ![](images/columns.png)
 
-Entonces resumiendo: Se empieza por añadiendo la clase `row`, esto creará un bloque horizontal el cual va a contener 12 columnas.
+Entonces resumiendo: Se empieza por añadiendo la clase `.row`, esto creará un bloque horizontal el cual va a contener 12 columnas.
 
-Uno puede especificar el ancho de la columna de pendiendo del tamaño de la pantalla:
+###Utilizando columnas para dispositivos específicos
+
+El sistema de grillas de Bootstrap cuenta con cuatro clases: `xs` extra small devices, para dispositivos con pantalla pequeña, normalmente móviles, sm small devices, para dispositivos con pantalla con una resolución mayor o igual a 768px que suelen ser tablets, md medium devices, por ejemplo para portátiles y ld larger desktops, para resoluciones de pantalla muy altas.
 
 Es bueno analizar de que palabras vienen los nombres de reglas de estilo que provee Bootstrap:
 
@@ -1106,26 +1108,32 @@ Es bueno analizar de que palabras vienen los nombres de reglas de estilo que pro
 <tr>
 <td> col-xs-*</td>
 <td> e(x)tra (s)mall</td>
+<td> dispositivos con pantalla pequeña, móviles</td>
 </tr>
 
 <tr>
-<td> Ccol-sm-* </td>
+<td> col-sm-* </td>
 <td> (sm)all</td>
+<td> dispositivos con resolución mayor o igual 768px, tablets</td>
 </tr>
 
 <tr>
 <td> col-md-*</td>
 <td> (m)e(d)ium</td>
+<td> dispositivos con resolución mayor o igual a 992px, notebooks  </td>
 </tr>
 
 <tr>
 <td> col-lg-*</td>
 <td> (l)ar(g)e </td>
+<td> resolución mayor o igual a 1200px , computador de escritorio </td>
 </tr>
 
 </table>
 
 *Donde* ` * ` es el número de columnas.
+
+Si quieres aprender más sobre el sistema de grillas de boostrap [aquí](
 
 
 ###Mobile First
@@ -1157,20 +1165,7 @@ La grilla contiene las siguientes media queries que debemos considerar:
 @media (min-width: @screen-lg-min) { }
 ~~~
 
-###Utilizando columnas para dispositivos específicos
 
-Bootstrap nos permite utilizar columnas especificamente para ciertos dispositivos.
-
-~~~html
-<section class="container">
-	<div class="row">
-		<div class="col-md-6"> 
-		</div>
-		<div class="col-md-6"> 
-		</div>
-	</div>
-</section>
-~~~
 
 
 
