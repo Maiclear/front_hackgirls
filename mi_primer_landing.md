@@ -4,9 +4,10 @@ Genial ahora pondremos en práctica lo que aprendimos de HTML y CSS pero agregar
 
 Como desafío vamos enseñar a construir el siguiente landing page
 
-// pega foto
+![Layout landing page!](images/layout_landing.png)
 
-Ya verás que con bootstrap no es complejo y podremos poner nuestros conocimientos en práctica, asi que manos a la obra.
+
+Ya verás que con bootstrap no es complejo y podremos poner nuestros conocimientos en práctica, asi que manos a la obra!!.
 
 ## Iniciando el proyecto
 Lo primero que debemos hacer es instalar bootstrap, para esto existen diferentes mecanismos de instalación, pero solo utilizaremos una de ellas, comencemos!
@@ -86,9 +87,9 @@ Si nos aparece lo siguiente
 Todo está funcionando. 
 
 ## Definiendo las secciones de nuestro landing
-Para construir nuestro landing lo primero que debemos es mirar nuestro diseño y segmentarlo en los diferentes bloques que estan propuestos, para definir cada bloque utilizaremos de forma correcta las etiquetas de HTML5 como header, footer, aside y section. Si quieres saber más de esto revisa el siguiente [link](#).
+Para construir nuestro landing lo primero que debemos es mirar nuestro diseño y segmentarlo en los diferentes bloques que estan propuestos, para definir cada bloque utilizaremos de forma correcta las etiquetas de HTML5 como header, footer, aside y section. Si quieres saber más de esto revisa el siguiente [link](http://www.w3schools.com/html/html5_semantic_elements.asp).
 
-// pega foto con landing y segmentación en bloques
+![Bootstrap layout AI!](images/layout_landing_section.png)
 
 Lo que se presenta en la foto anterio lo debemos llevar código, para ello escribiremos los siguientes bloques dentro de la etiqueta body. (recuerda que todo lo que ve el visitante de tu sitio va dentro de body)
 
@@ -128,11 +129,11 @@ Dentro de cada bloque colocaremos lo siguiente
   </div>
 ```
 
-Este bloque define un contenedor de un ancho que bootstrap proporciona y cambia en función del tamaño de nuestro viewport*. Con el bloque row nos permitirá colocar columnas de forma segura sin que se desarme nuestro diseño. Si quieres saber más detalles como funciona la clase .row visita el siguiente [link](#) que se explica en detalle el concepto de clearfix & row.
+Este bloque define un contenedor de un ancho que bootstrap proporciona y cambia en función del tamaño de nuestro viewport*. Con el bloque row nos permitirá colocar columnas de forma segura sin que se desarme nuestro diseño. Si quieres saber más detalles como funciona la clase .row visita el siguiente [link](http://librosweb.es/libro/bootstrap_3/capitulo_2/reseteando_columnas.html) que se explica en detalle el concepto de clearfix & row.
 
 Ahora podemos ir definiendo las diferentes columnas en función de layout que estamos intentando construir.
 
-Comencemos con el header. Si revisas la imagen te daras cuenta que el header contiene una imagen de fondo, una frase principal (nuestro h1), dos botones, una frase de bajada (un p) y un menú. Para este último utilizaremos [navbar de bootstrap](http://getbootstrap.com/components/#navbar). Ahora todos estos elementos en el header deberían quedar de la siguiente forma
+Comencemos con el header. Si revisas la imagen te daras cuenta que el header contiene una imagen de fondo, una frase principal (nuestro h1), dos botones, una frase de bajada (un párrafo <p>) y un menú. Para este último utilizaremos [navbar de bootstrap](http://getbootstrap.com/components/#navbar). Ahora todos estos elementos en el header deberían quedar de la siguiente forma
 
 ```
 
@@ -194,7 +195,6 @@ El elemento más complejo de este bloque es el menú. Bootstrap nos provee un me
 
 El menú por si solo está definido en el siguiente bloque:
 
-
 ```
 <nav class="navbar navbar-default navbar-latam">
                     <div class="container-fluid">
@@ -239,7 +239,7 @@ Navbar provee un pequeño bloque para colocar nuestro bloque. Acá colocaremos e
 </a>
 ```
 
-¿Funciona la imagen? la respuesta en no :/. esto se debe a que debemos cargar la imagen en nuestro proyecto. Para ello crearemos una carpeta al mismo nivel que css, y le colocaremos el nombre de __images__ dentro de ella copiamos la imagen del logo (la puedes descargar desde [acá](#))
+¿Funciona la imagen? la respuesta en no :/. esto se debe a que debemos cargar la imagen en nuestro proyecto. Para ello crearemos una carpeta al mismo nivel que css, y le colocaremos el nombre de __images__ dentro de ella copiamos la imagen del logo (la puedes descargar desde [acá](images/demo/images/latam_logo.png))
 
 Si te fijas y vuelves a abrir la página ya verás el logo (no se verá del todo bien pero ya lo mejoraremos :D)
 
@@ -272,7 +272,7 @@ Probemos lo que llevamos ahora. Recuerda que solo estamos definiendo elementos e
 
 Sigamos con la siguiente sección
 
-// analogo a lo anterior
+// analogo a lo anterior (pendiente)
 
 Uff! ya estamos casi. nos queda la última sección. A diferencia de las anteriores esta la dividiremos en dos columnas. la primera será de 4 columnas y la segunda 8 para completar las 12 columnas que necesitamos. Por lo que nos quedaría de la siguiente forma:
 
@@ -363,7 +363,8 @@ Finalmente nos queda definir el pie de la página. Esto será simple y se reduce
   </footer>
 ```
 
-Con esto ya tenemos nuestro código base para comenzar a pintar. Te perdiste? no te preocupes [acá](#) puedes revisar el código completo. 
+Con esto ya tenemos nuestro código base para comenzar a pintar. Te perdiste? no te preocupes [acá](images/demos/index.html) puedes revisar el código completo. 
 
 ## Colocando un poco de color (CSS)
 ... pendiente
+
