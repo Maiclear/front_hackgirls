@@ -138,9 +138,9 @@ Este bloque define un contenedor de un ancho que bootstrap proporciona y cambia 
 
 Ahora podemos ir definiendo las diferentes columnas en función de layout que estamos intentando construir.
 
-Comencemos con el header. Si revisas la imagen te daras cuenta que el header contiene una imagen de fondo, una frase principal (nuestro h1), dos botones, una frase de bajada (un párrafo <p>) y un menú. Para este último utilizaremos [navbar de bootstrap](http://getbootstrap.com/components/#navbar). Ahora todos estos elementos en el header deberían quedar de la siguiente forma
+Comencemos con el header. Si revisas la imagen te darás cuenta que el header contiene una imagen de fondo, una frase principal (nuestro h1), dos botones, una frase de bajada (un párrafo `<p>`) y un menú. Para este último utilizaremos [navbar de bootstrap](http://getbootstrap.com/components/#navbar). Ahora todos estos elementos en el header deberían quedar de la siguiente forma.
 
-```
+```html
 
   <header class="main">
 
@@ -196,11 +196,13 @@ Comencemos con el header. Si revisas la imagen te daras cuenta que el header con
 
 Al colocar este código ya podrías ver en tu navegador como va quedando el landing. si te fijas lo que vemos es solo estructural, asi que tranquila ya le pondremos color :D.
 
-El elemento más complejo de este bloque es el menú. Bootstrap nos provee un menú ya construido y solo debemos copiar y pegar (si como lo escuhas copiar y pegar pero con un poco de talento :D).
+Hablemos de este código que acabamos de pegar.
+
+El elemento más complejo de **este bloque** es el menú. Bootstrap nos provee un menú ya construido y solo debemos copiar y pegar (si como lo escuhas copiar y pegar pero con un poco de talento :D).
 
 El menú por si solo está definido en el siguiente bloque:
 
-```
+```html
 <nav class="navbar navbar-default navbar-latam">
                     <div class="container-fluid">
                       <!-- Brand and toggle get grouped for better mobile display -->
@@ -234,11 +236,11 @@ El menú por si solo está definido en el siguiente bloque:
 
 si todo funciona correctamente, ya deberíamos tener nuestra página con un menú que funciona en pantallas pequeñas. 
 
-__¿y el logo donde lo colocamos?__
+__¿Y el logo donde lo colocamos?__
 
 Navbar provee un pequeño bloque para colocar nuestro bloque. Acá colocaremos el logotipo de nuestro diseño. este bloque debería quedar así
 
-```
+```html
 <a class="navbar-brand" href="#">
     <img src="images/latam_logo.png" alt="Logo latam" class="logo">
 </a>
