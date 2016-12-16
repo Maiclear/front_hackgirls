@@ -502,6 +502,7 @@ Es posible agregar tablas con datos ocupando la etiqueta `<table>`, dentro de un
 </tr>
 
 </table>
+
 ###Divs:
 Los divs son etiquetas que permiten anidar a otras etiqueta y le damos estilo propio a la agrupación (esto lo haremos más adelante con CSS).
 Envuelve varias etiquetas, y todas las etiquetas envueltas por él, están bajo la influencia del div.
@@ -677,7 +678,17 @@ possimus, molestiae architecto, aperiam officiis, amet consequatur,
 </html>
 
 ~~~
-Para cambiarle el color a todo el contenido del título `<h1>`
+
+Utilizando la misma sintaxis:
+
+~~~css
+etiqueta {
+	propiedad: valor;
+}
+~~~
+
+Entonces para cambiarle el color a todo el contenido del título `<h1>`
+
 
 ~~~css
 h1 {
@@ -709,7 +720,48 @@ Quedando así:
 
 Vemos que ahora tenemos toda la página con un color distinto al por defecto que es blanco.
 
-Nótese también que ahora no se utilizó darle el color nombrándolo, sino que se utilizó el sistema hexagesimal.
+Nótese también que ahora no se utilizó darle el color nombrándolo, sino que se utilizó el sistema hexadecimal.
+
+Más Sobre sistema de colores en CSS [aquí](http://htmlcolorcodes.com/es/tutoriales/conceptos-basicos-de-color-css/).
+
+##Tamaño de la fuente:
+Ademas de darle color a la letra también se puede 
+
+## Cambiando las tipografías
+Para cambiar la tipografía de una marca debemos ocupar la propiedad font-family
+
+~~~css
+body{ font-family: "Times New Roman", Georgia, Serif; }
+~~~
+
+font family acepta diversas tipografías simultáneamente a modo de fallback, o sea si una tipografía falla en cargar se cargará la siguiente, si una de los nombres de la tipografía tiene espacios entre medio hay que agregarla entre comillas `" "`
+
+## Googlefonts
+
+[https://www.google.com/fonts
+](www.google.com/fonts) es una página web que permite cargar de forma sencilla diversas tipografías no tan comunes dentro de tu sitio, 
+
+![imagen google font](images/googlefonts.png)
+
+Para utilizarla debes hacer click en la opción `quick use` de la fuente respectiva, luego seleccionar los pesos de la fuente.
+
+Importar la fuente dentro del html o dentro del CSS, por ejemplo si quisieramos importar open sans sería:
+
+~~~html
+<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+~~~
+
+y finalmente utilizarla.
+
+~~~css
+body {font-family: 'Open Sans', sans-serif;}
+~~~
+
+## Alineando textos
+
+<div class="yellow info">
+No debes abusar de esto pues cada tipografía agrega un peso extro a tu página haciendola más lenta de cargar.
+</div>
 
 ## Pseudo clases
 
@@ -730,42 +782,6 @@ Otros pseudo selectores
 | Pseudoselector | Ejemplo |
 |----------------|-----------------------------------|
 | mouse sobre párrafo | ```p:hover { color: #FF00FF;} ```
-
-## Cambiando las tipografías
-Para cambiar la tipografía de una marca debemos ocupar la propiedad font-family
-
-~~~css
-body{ font-family: "Times New Roman", Georgia, Serif; }
-~~~
-
-font family acepta diversas tipografías simultáneamente a modo de fallback, o sea si una tipografía falla en cargar se cargará la siguiente, si una de los nombres de la tipografía tiene espacios entre medio hay que agregarla entre comillas `""`
-
-## Googlefonts
-
-[https://www.google.com/fonts
-](www.google.com/fonts) es una página web que permite cargar de forma sencilla diversas tipografías no tan comunes dentro de tu sitio, 
-
-![](images/google fonts.png)
-
-Para utilizarla debes hacer click en la opción quick use de la fuente respectiva, luego seleccionar los pesos de la fuente.
-
-Importar la fuente dentro del html o dentro del CSS, por ejemplo si quisieramos importar open sans sería
-
-~~~
-<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-~~~
-
-y finalmente utilizarla.
-
-~~~
-body {font-family: 'Open Sans', sans-serif;}
-~~~
-
-## Alineando textos
-
-<div class="warning">
-No debes abusar de esto pues cada tipografía agrega un peso extro a tu página haciendola más lenta de cargar.
-</div>
 
 
 #¿Qué es Bootstrap?
@@ -1037,9 +1053,11 @@ Bootstrap tambien permite convertir iframes en responsive, el proceso es similar
 
 ##La Grilla
 
-Bootstrap contiene una grilla que permite crear layouts de forma muy sencilla
+Bootstrap contiene una grilla que permite crear layouts de forma muy sencilla.
 
-Para utilizar una grilla lo primero que debemos crear es un row
+
+Para utilizar una grilla lo primero que debemos crear es un row (fila)
+
 
 ~~~html
 <div class="row">
@@ -1047,6 +1065,9 @@ Para utilizar una grilla lo primero que debemos crear es un row
 ~~~
 
 Dentro de este row dispondremos de 12 columnas virtuales que podemos agrupar a nuestro antojo para poner contenido.
+
+
+![imagen de grillas](images/grillas.png)
 
 ~~~html
 <div class="row">
@@ -1059,7 +1080,7 @@ Dentro de este row dispondremos de 12 columnas virtuales que podemos agrupar a n
 
 Dentro de cada una estas columnas podemos agregar todo el contenido que queramos y este contenido se adaptará dentro de las columnas.
 
-Si vamos agregar texto o imagenes sería bueno envolver las columnas en un container.
+Si vamos agregar texto o imagenes sería bueno envolver las columnas en un container. (para agregarles márgenes)
 
 ~~~html
 <section class="container">
@@ -1074,6 +1095,38 @@ Si vamos agregar texto o imagenes sería bueno envolver las columnas en un conta
 
 ![](images/columns.png)
 
+Entonces resumiendo: Se empieza por añadiendo la clase `row`, esto creará un bloque horizontal el cual va a contener 12 columnas.
+
+Uno puede especificar el ancho de la columna de pendiendo del tamaño de la pantalla:
+
+Es bueno analizar de que palabras vienen los nombres de reglas de estilo que provee Bootstrap:
+
+
+<table>
+<tr>
+<td> col-xs-*</td>
+<td> e(x)tra (s)mall</td>
+</tr>
+
+<tr>
+<td> Ccol-sm-* </td>
+<td> (sm)all</td>
+</tr>
+
+<tr>
+<td> col-md-*</td>
+<td> (m)e(d)ium</td>
+</tr>
+
+<tr>
+<td> col-lg-*</td>
+<td> (l)ar(g)e </td>
+</tr>
+
+</table>
+
+*Donde* ` * ` es el número de columnas.
+
 
 ###Mobile First
 
@@ -1083,7 +1136,7 @@ A menos que especifiquemos lo contrario.
 
 ¿En que repercute esto?
 
-Al disminuir el ancho de la página (o al verda desde un teléfono) veremos que la grilla se rompe.
+Al disminuir el ancho de la página (o al verla desde un teléfono) veremos que la grilla se rompe.
 
 ![](images/9 mobile-first.png)
 
