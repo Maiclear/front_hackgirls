@@ -805,6 +805,7 @@ Luego en el archivo css
 	color: violet;
 }	
 ~~~
+Para referirse a las clases se se ecribe un `. ` y luego el nombre que le diste a la clase en este caso `.violeta`
 
 Con esto hago que dos etiquetas distintas (o cuantas yo quiera), tengan el contenido de color violeta.
 

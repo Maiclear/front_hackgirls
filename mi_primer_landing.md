@@ -494,7 +494,7 @@ Recuerda que para usar lato debes agregar el siguiente código en tu head
 <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 ```
 
-Con esto ya verás el título con la tipografía Lato y los estilos que ya aplicamos. Ahora retocaremos el texto de bajada que etiquetamos con la clase ___.headline-caption__, a esta clase aplicaremos tamaños de medidas y sombra, además definiremos el color de fuente a blanco. Las reglas CSS serán
+Con esto ya verás el título con la tipografía Lato y los estilos que ya aplicamos. Ahora retocaremos el texto de bajada que etiquetamos con la clase __.headline-caption__, a esta clase aplicaremos tamaños de medidas y sombra, además definiremos el color de fuente a blanco. Las reglas CSS serán
 
 ```css3
 .main .headline-caption {
