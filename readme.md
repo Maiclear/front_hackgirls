@@ -523,7 +523,7 @@ La etiqueta span es similar a los divs pero sirve para etiquetar texto, una part
 <p> Lorem <span> Ipsum </span> </p>
 ~~~
 
-SI queires ver un resumen de las etiquetas ebtra [aquí](resumen_de_marcas)
+SI queires ver un resumen de las etiquetas ebtra [aquí](resumen_de_marcas.md)
 
 ##El inspector de elementos
 El inspector de elementos, es una herramienta que podemos abrirla haciendo click derecho sobre la página y luego inspect nos muestra el código completo de la página y nos permite modificarlo. Con esta herramienta pueden ver el código de cualquier página web. 
