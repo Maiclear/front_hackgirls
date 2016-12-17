@@ -16,4 +16,11 @@
 |`<img src="url"> ` | Pone una imágen ubicada en url, la ruta puede ser relativa para archivos locales a la página o absoluta para archivos externos.|
 |`<div>` | Agrupa las etiquetas para darle propiedades posteriormente con CSS |
 |`<span>`| Agrupa una parte de un texto para darle propiedades posteriormente con CSS |
-
+<h3> HTML5 </h3>
+|Marca                    | Explicación                                     |
+|---------------------------|--------------------------|
+|`<header>`| Grupo de elementos de introducción de un documento (como los h1, h2). No confundir con <head>, la cabecera HTML que contiene metainformación no visible.|
+|`<nav>`| Enlaces de navegación. Lo utilizaremos para generar  menús de navegación horizontal, o lateral.|
+|`<section>`| Define una sección en un documento. Por ejemplo, la sección central con el conjunto de artículos de un blog, podremos tener varias secciones dentro de una misma pagina.|
+|`<aside>`| Contenidos poco relacionados con el resto del contenido de la página. Si no es visualizado, el contenido restante seguirá teniendo sentido. Por ejemplo, una barra lateral con anuncios, u otros contenidos.|
+|`<footer>`| Pie de una página.|
