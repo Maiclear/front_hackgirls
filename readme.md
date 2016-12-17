@@ -11,7 +11,7 @@ GUÍA HACKGIRLS - FRONT DAY
 
 En Chile, A nivel urbano nacional, el 20% de las mujeres ocupadas en Chile son “trabajadoras por cuenta propia”, según la encuesta Voz de Mujer (cifra que coincide con la entregada por la última Casen). En tanto, solo el 3% son “patrón o empleadora”, lo cuál correspondería a empresarias.
 
-El propósito de Emprededoras.club es cambiar esta realidad, a través de la entrega de conocimientos y herramientas que faciliten la creación de empresas y tecnología.
+El propósito de EmprededorasClub es cambiar esta realidad, a través de la entrega de conocimientos y herramientas que faciliten la creación de empresas y tecnología.
 
 Front Day es un evento con el objetivo de entregar conocimientos básicos de programación web a mujeres programadoras para que puedan construir y supervisar la construcción de las páginas web de sus empresas.
 
@@ -30,8 +30,6 @@ Cómo navegador puedes ocupar alguno como:
 Cómo editor de texto te recomendamos:
 
 - [Sublime](https://www.sublimetext.com/)
-
-- [Atom](https://atom.io).
 
 #Qué es una página web
 
@@ -504,6 +502,7 @@ Es posible agregar tablas con datos ocupando la etiqueta `<table>`, dentro de un
 </tr>
 
 </table>
+
 ###Divs:
 Los divs son etiquetas que permiten anidar a otras etiqueta y le damos estilo propio a la agrupación (esto lo haremos más adelante con CSS).
 Envuelve varias etiquetas, y todas las etiquetas envueltas por él, están bajo la influencia del div.
@@ -524,6 +523,16 @@ La etiqueta span es similar a los divs pero sirve para etiquetar texto, una part
 <p> Lorem <span> Ipsum </span> </p>
 ~~~
 
+###Etiquetas semánticas:
+
+HTML5 introduce  etiquetas semánticas, que no aportan ningún comportamiento visual adicional, pero que nos permiten por un lado definir de forma semántica el significado de su contenido, lo que será muy útil para el SEO (la optimización de contenidos para buscadores)
+
+![imgen de etiquetas semanticas](images/semanticas.png)
+
+Si quieres aprender más [aquí](http://www.tutorialmonsters.com/web-semantica-con-html5/)
+
+###Resumen de etiquetas
+Resumen de las etiquetas [aquí](resumen/resumen_de_marcas.md)
 
 ##El inspector de elementos
 El inspector de elementos, es una herramienta que podemos abrirla haciendo click derecho sobre la página y luego inspect nos muestra el código completo de la página y nos permite modificarlo. Con esta herramienta pueden ver el código de cualquier página web. 
@@ -562,9 +571,9 @@ Hay tres formas de incorporar CSS dentro de una página web.
 
 - La tercera forma consiste en utilizar un archivo externo.
 
-La forma recomendada de trabajar es la 3º, pero para explicar como funciona CSS partiremos ocupando la primera forma.
+La **forma recomendada de trabajar es la 3º**, pero para explicar como funciona CSS ejemplificaremos sobre la primera y se dará una breve explicación de la segunda.
 
-#Sintaxis y primera forma
+##Sintaxis y primera forma
 Todas las instrucciones en CSS se escriben en pares propiedad: valor, para agregar CSS sobre una etiqueta HTML (Primera forma) debes agregar a la etiqueta syle="propiedad: valor"
 
 ## Un ejemplo: color para un párrafo
@@ -575,7 +584,8 @@ Todas las instrucciones en CSS se escriben en pares propiedad: valor, para agreg
 
 Intenta cambiar ahora el color de Body
 
-#Agregando CSS en el head
+##Agregando CSS en el head
+ 
 La segunda forma de agregar CSS consiste en agregar las propiedades y valores de CSS dentro de una etiqueta style en el head de la página
 
 ~~~html
@@ -588,7 +598,7 @@ La segunda forma de agregar CSS consiste en agregar las propiedades y valores de
 </head>
 ~~~
 
-##Sintaxis:
+###Sintaxis:
 La sintaxis de css siempre tiene la siguiente estructura:
 
 ~~~css
@@ -679,7 +689,17 @@ possimus, molestiae architecto, aperiam officiis, amet consequatur,
 </html>
 
 ~~~
-Para cambiarle el color a todo el contenido del título `<h1>`
+
+Utilizando la misma sintaxis:
+
+~~~css
+etiqueta {
+	propiedad: valor;
+}
+~~~
+
+Entonces para cambiarle el color a todo el contenido del título `<h1>`
+
 
 ~~~css
 h1 {
@@ -711,63 +731,116 @@ Quedando así:
 
 Vemos que ahora tenemos toda la página con un color distinto al por defecto que es blanco.
 
-Nótese también que ahora no se utilizó darle el color nombrándolo, sino que se utilizó el sistema hexagesimal.
+Nótese también que ahora no se utilizó darle el color nombrándolo, sino que se utilizó el sistema hexadecimal.
 
-## Pseudo clases
+Más Sobre sistema de colores en CSS [aquí](http://htmlcolorcodes.com/es/tutoriales/conceptos-basicos-de-color-css/).
 
-Las pseudo clases sirven para definir propiedades en base a el estado de un elemento, estas nos permiten  cambiar las propiedades de una marca cuando el mouse se mueve por encima, o cambiar las propiedades de un link que ya ha sido visitado.
+###Tamaño de la fuente :
+Ademas de darle color a la letra también se puede cambiar el tamaño.
+Eso se hace utilizando la propiedad `font-size`
 
-La sintaxis para una pseudo clase es selector:estado
+~~~css
+p {
+	color: green;
+	font-size: 20px;
+}
+~~~
 
-Pseudoselectores para links
+Aquí se puede ver que además de decirle a los párrafos que sean de color rojo, tenga el tamaño de 40 pixeles (`px`). Puedo agregar cuantas propiedades quiera sobre una etiqueta.
 
-| Pseudoselector | Ejemplo |
-|----------------|-----------------------------------|
-| unvisited link | ``` a:link { color: #FF0000; } ```|
-| visited link | ```a:visited { color: #00FF00; } ```|
-| selected link | ``` a:active {color: #0000FF;} ``` |
+Pero esto hará que **todos** los párrafos se comporten de esa manera (que tengan el texto verde y tamaño de letra de 20px).
 
-Otros pseudo selectores
+**¿Cómo hago para personalizar el cambio de una etiqueta específica?**
 
-| Pseudoselector | Ejemplo |
-|----------------|-----------------------------------|
-| mouse sobre párrafo | ```p:hover { color: #FF00FF;} ```
+Ahora lo sabrás:
 
-## Cambiando las tipografías
+##ID y Clases
+
+Los **ID** son identificadores **únicos** para cada etiqueta, es como un nombre que se le da a la etiqueta para hacerla única.
+
+Por ejemplo se le asignará el id "parrafo1" al primer párrafo:
+
+~~~html
+<p id="parrafo1" > Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+Ipsam consequuntur omnis minima dolorem adipisci officiis enim 
+optio tenetur quos aliquid, saepe, corporis dignissimos? 
+Harum debitis veritatis voluptas, illum iste deserunt.
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+Quo dolorem dignissimos expedita repellendus ducimus natus 
+possimus, molestiae architecto, aperiam officiis, amet consequatur,
+ nisi. Est accusamus eum quos natus architecto modi </p>
+ 
+~~~
+
+De esta manera yo le puedo dar estilo específico a ese párrafo y no a todos.
+
+Ahora le asigno el estilo en mi archivo miestilo.css
+
+~~~css
+#parrafo1 {
+	color: blue;
+	font-size: 10px;
+}
+	
+~~~
+Ahora solo mi párrafo con id "parrafo1" tendrá el texto azul y tamaño de fuente de 10px, y los demás serán verdes y con tamaño de 20px.
+
+Se escribe `#` para referirse a una id , y más el nombre para saber a cuál id me estoy refiriendo.
+
+Pero como se mencionaba anteriormente el id es único! Pero qué pasa si se quiere asignar esa propiedad a varias etiquetas distintas?
+
+Para eso existen las **clases**. Las clases es como un identificador pero **no** único.
+
+~~~html
+<h1 class="violeta" > Evento Hack Rails </h1>
+
+<h3 class="violeta" >Por más mujeres en emprendimiento y tecnología</h3>
+~~~
+
+Aquí se le está asignando la misma clase a 2 etiquetas distintas (`<h1>`y `<h3>`).
+Luego en el archivo css
+
+~~~css
+.violeta {
+	color: violet;
+}	
+~~~
+Para referirse a las clases se se ecribe un `. ` y luego el nombre que le diste a la clase en este caso `.violeta`
+
+Con esto hago que dos etiquetas distintas (o cuantas yo quiera), tengan el contenido de color violeta.
+
+
+### Cambiando las tipografías
 Para cambiar la tipografía de una marca debemos ocupar la propiedad font-family
 
 ~~~css
 body{ font-family: "Times New Roman", Georgia, Serif; }
 ~~~
 
-font family acepta diversas tipografías simultáneamente a modo de fallback, o sea si una tipografía falla en cargar se cargará la siguiente, si una de los nombres de la tipografía tiene espacios entre medio hay que agregarla entre comillas `""`
+font family acepta diversas tipografías simultáneamente a modo de fallback, o sea si una tipografía falla en cargar se cargará la siguiente, si una de los nombres de la tipografía tiene espacios entre medio hay que agregarla entre comillas `" "`
 
-## Googlefonts
+### Googlefonts
 
 [https://www.google.com/fonts
-](www.google.com/fonts) es una página web que permite cargar de forma sencilla diversas tipografías no tan comunes dentro de tu sitio, 
+](https://fonts.google.com/) es una página web que permite cargar de forma sencilla diversas tipografías no tan comunes dentro de tu sitio, 
 
-![](images/google fonts.png)
+![imagen google font](images/google_font.png)
 
-Para utilizarla debes hacer click en la opción quick use de la fuente respectiva, luego seleccionar los pesos de la fuente.
+Para utilizarla debes hacer click en la opción `select this font` de la fuente respectiva, luego seleccionar los pesos de la fuente.
 
-Importar la fuente dentro del html o dentro del CSS, por ejemplo si quisieramos importar open sans sería
+Importar la fuente dentro del html o dentro del CSS, por ejemplo si quisiéramos importar open sans dentro del html sería:
 
+~~~html
+<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> 
 ~~~
-<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-~~~
 
-y finalmente utilizarla.
+y finalmente utilizarla en nuestro archivo miestilo.css
 
-~~~
+~~~css
 body {font-family: 'Open Sans', sans-serif;}
 ~~~
 
-## Alineando textos
-
-<div class="warning">
-No debes abusar de esto pues cada tipografía agrega un peso extro a tu página haciendola más lenta de cargar.
-</div>
+Hay muchas propiedades en CSS, [aquí](http://www.mclibre.org/consultar/htmlcss/css/css_propiedades.html) un listado de algunas.
 
 
 #¿Qué es Bootstrap?
@@ -782,7 +855,7 @@ Utilizar bootstrap completamente por defecto y no personalizarlo da un toque gen
 
 
 #Descargando bootstrap
-Hay dos formas, la primera es el CDN, la segunda descargando los archivos.
+Hay dos formas, la primera es el [CDN](https://www.bootstrapcdn.com/), la segunda descargando los archivos.
 
 El CDN consiste simplemente en 2 archivos CSS y un archivo JS que deben ser linkeados en la página.
 
@@ -803,7 +876,7 @@ bootstrap/
     └── examples/
 </pre>
 
-<aside class="info"> Un CDN es una especie de página web para descargar contenido, pero está optimizada para la descarga rápida de assets, además que los CDN tienen servidores en diversas partes del mundo disminuyendo el impacto en la velocidad por distancia.
+<aside class="info yellow"> Un CDN es una especie de página web para descargar contenido, pero está optimizada para la descarga rápida de assets, además que los CDN tienen servidores en diversas partes del mundo disminuyendo el impacto en la velocidad por distancia.
 </aside>
 
 #El primer template con bootstrap
@@ -856,12 +929,31 @@ Para detectar si hay conflictos con las rutas que pusimos para los assets de boo
 
 ![](images/inspector.png)
 
-<aside class="warning"> Abrir el tab no es suficiente, hay que recargar la página con el tab network abierto para obtener la información. </aside>
+<aside class="info yellow"> Abrir el tab no es suficiente, hay que recargar la página con el tab network abierto para obtener la información. </aside>
 
 Un error típico que podemos detectar de esta forma es la no inclusión (o la inclusión posterior) de Jquery, el javascript de bootstrap depende de Jquery para su funcionamiento, por lo que no incluirlo o hacerlo después mostrará un error y no funcionará correctamente la capa de javascript de bootstrap.
 
 # Comenzando con bootstrap
 Partamos por las componentes básicas.
+
+##Botón
+
+Te diriges a la [documentación](http://getbootstrap.com/) de Bootstrap, luego
+te diriges  a tab `CSS` y encuentra en el menú derecho `Buttons`.
+Si bajas un poco te encontrarás por ejemplo con esto:
+
+![imagen de botones](images/botones.png)
+
+La documentación de Bootstrap es muy amigable como ves, te muestra el código y el ejemplo de cómo quedará ese código.
+
+Por ejemplo quiero ese botón verde (Succes), simplemente copiamos el código respectivo y pegamos en nuestro archivo html donde se quiera que aparezca.
+
+~~~html
+<button type="button" class="btn btn-success">Success</button>
+~~~
+Entonces que pasa aquí, se utiliza la etiqueta button (para que sepa que es un botón) se le dice que es de tipo botón y se le **agrega la clase** `btn` **y además la clase** `btn-success` para darle las propiedades de css que lo dejan como muestra la imagen.
+
+Esta es una de las maravillas de Bootstrap! Puedes asignarle diseño, propiedades y más por medio de clases predeterminadas por Bootstrap.
 
 ##Jumbotron
 Es una componente lightweight y flexible que permite mostrar texto o imágenes de forma resaltada en el sitio, ideal para la propuesta de valor del landing page
@@ -946,7 +1038,7 @@ Algo muy distinto sucede cuando ponemos el jumbotron dentro de un container.
 
 Como vemos en la imagen nos damos cuenta que ahora el jumbotron no está pegado al borde de la página, y además ahora es el borde del jumbotron el que está alineado con el texto de los otros containers.
 
-<aside class="success"> **¿Cuál método utilizar?** <br> Depende de lo que se quiera hacer, todos los métodos previos son correctos </aside>
+<aside class="yellow "> **¿Cuál método utilizar?** <br> Depende de lo que se quiera hacer, todos los métodos previos son correctos </aside>
 
 ## Glyphicons
 
@@ -968,7 +1060,7 @@ La lista de Glyphicons es bastante grande
 
 ![](images/glyphs.png)
 
-se puede consultar en la: [documtación oficial](http://getbootstrap.com/components/#glyphicons-glyphs)
+se puede consultar en la: [documentación oficial](http://getbootstrap.com/components/#glyphicons-glyphs)
 
 ## Imágenes responsive
 
@@ -990,7 +1082,7 @@ Además hay clases que pueden ayudarnos a darle formas a las imágenes.
 <img src="..." alt="..." class="img-thumbnail">
 ~~~
 
-<aside class="warning"> **width vs max-widht** <br> debemos tener cuidado con la propiedad max-width porque esta no cambiará el tamaño de las fotos que son menores al espacio disponible. </aside>
+<aside class="yellow"> **width vs max-widht** <br> debemos tener cuidado con la propiedad max-width porque esta no cambiará el tamaño de las fotos que son menores al espacio disponible. </aside>
  
 ## Thumbnails
  
@@ -1015,33 +1107,55 @@ Los thumbnails permiten agregar estilos y bordes de forma sencilla a las imágen
 
 ![](images/thumbnail.png)
 
-<aside class="info"> **To thumbnail or not to thumbnail** <br>
+<aside class="info yellow"> **To thumbnail or not to thumbnail** <br>
 La clase thumbnail puede aplicarse directamente a la imagen o a un div superior, en caso de aplicarse a la imagen perderemos otras propiedades como el redondeado y no podremos poner otro contenido dentro del thumbnail.
 </aside>
 
-##Iframes responsivos
+## NavBar
 
-Bootstrap tambien permite convertir iframes en responsive, el proceso es similar pero requiere de dos pasos, en primer lugar al iframe hay que agregarle la clase **embed-responsive-item** en segundo lugar hay que envolver este iframe en otro div, donde se debe especificar las proporciones del iframe.
+En la [documentación](http://getbootstrap.com/) de bootstrap , te diriges a `Components` , y ahí encontrarás varios componentes entre ellos ejemplos de  barra de navegación. (En menú derecho `Navbar`)
+
+![nav](images/navbar.png)
 
 ~~~html
-<!-- 16:9 aspect ratio -->
-<div class="embed-responsive embed-responsive-16by9">
-  <iframe class="embed-responsive-item" src="..."></iframe>
-</div>
-
-<!-- 4:3 aspect ratio -->
-<div class="embed-responsive embed-responsive-4by3">
-  <iframe class="embed-responsive-item" src="..."></iframe>
-</div>
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">Link</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
 ~~~
+*Este código es sólo una parte de la barra de navegación de la imagen, sólo los ítems de la izquierda.*
 
-16/9 es mas ancho que alto, algo así como una pantalla de cine,  mientras que 4/3 es un poco más cuadrado, cual utilizar es cosa principalmente de gustos.
+
+Al ser barra de navegación, pego el código al inicio de nuestro código, luego de empezado el `<body>`
+
+ 
+
+
+
+
 
 ##La Grilla
 
-Bootstrap contiene una grilla que permite crear layouts de forma muy sencilla
+Bootstrap contiene una grilla que permite crear layouts de forma muy sencilla.
 
-Para utilizar una grilla lo primero que debemos crear es un row
+
+Para utilizar una grilla lo primero que debemos crear es un row (fila)
+
 
 ~~~html
 <div class="row">
@@ -1050,18 +1164,44 @@ Para utilizar una grilla lo primero que debemos crear es un row
 
 Dentro de este row dispondremos de 12 columnas virtuales que podemos agrupar a nuestro antojo para poner contenido.
 
+![imagen de grillas](images/grillas.png)
+
+
 ~~~html
 <div class="row">
-	<div class="col-md-6"> 
-	</div>
-	<div class="col-md-6"> 
-	</div>	
+  <div class="col-md-1">.col-md-1</div>
+  <div class="col-md-1">.col-md-1</div>
+  <div class="col-md-1">.col-md-1</div>
+  <div class="col-md-1">.col-md-1</div>
+  <div class="col-md-1">.col-md-1</div>
+  <div class="col-md-1">.col-md-1</div>
+  <div class="col-md-1">.col-md-1</div>
+  <div class="col-md-1">.col-md-1</div>
+  <div class="col-md-1">.col-md-1</div>
+  <div class="col-md-1">.col-md-1</div>
+  <div class="col-md-1">.col-md-1</div>
+  <div class="col-md-1">.col-md-1</div>
 </div>
+<div class="row">
+  <div class="col-md-8">.col-md-8</div>
+  <div class="col-md-4">.col-md-4</div>
+</div>
+<div class="row">
+  <div class="col-md-4">.col-md-4</div>
+  <div class="col-md-4">.col-md-4</div>
+  <div class="col-md-4">.col-md-4</div>
+</div>
+<div class="row">
+  <div class="col-md-6">.col-md-6</div>
+  <div class="col-md-6">.col-md-6</div>
+</div>
+
+
 ~~~
 
 Dentro de cada una estas columnas podemos agregar todo el contenido que queramos y este contenido se adaptará dentro de las columnas.
 
-Si vamos agregar texto o imagenes sería bueno envolver las columnas en un container.
+Si vamos agregar texto o imagánes sería bueno envolver las columnas en un container. (para agregarles márgenes)
 
 ~~~html
 <section class="container">
@@ -1076,16 +1216,52 @@ Si vamos agregar texto o imagenes sería bueno envolver las columnas en un conta
 
 ![](images/columns.png)
 
+Entonces resumiendo: Se empieza por añadiendo la clase `.row`, esto creará un bloque horizontal el cual va a contener 12 columnas.
+
+###Utilizando columnas para dispositivos específicos
+
+Es bueno analizar de que palabras vienen los nombres de reglas de estilo que provee Bootstrap:
+
+
+<table>
+<tr>
+<td> col-xs-*</td>
+<td> e(x)tra (s)mall</td>
+<td> dispositivos con pantalla pequeña, móviles</td>
+</tr>
+
+<tr>
+<td> col-sm-* </td>
+<td> (sm)all</td>
+<td> dispositivos con resolución mayor o igual 768px, tablets</td>
+</tr>
+
+<tr>
+<td> col-md-*</td>
+<td> (m)e(d)ium</td>
+<td> dispositivos con resolución mayor o igual a 992px, notebooks  </td>
+</tr>
+
+<tr>
+<td> col-lg-*</td>
+<td> (l)ar(g)e </td>
+<td> resolución mayor o igual a 1200px , computador de escritorio </td>
+</tr>
+
+</table>
+
+*Donde* ` * ` es el número de columnas.
+
 
 ###Mobile First
 
-Bootstrap 3 está construído sobre el concepto de mobile first, esto quiere decir que el primer principio es que la página debe adaptarse al contenido, para eso lo que hace bootstrap es utilizar media queries y desarmar la grilla disponiendo de todo el ancho de la página para presentar su contenido.
+Bootstrap 3 está construido sobre el concepto de mobile first, esto quiere decir que el primer principio es que la página debe adaptarse al contenido, para eso lo que hace bootstrap es utilizar media queries y desarmar la grilla disponiendo de todo el ancho de la página para presentar su contenido.
 
 A menos que especifiquemos lo contrario.
 
 ¿En que repercute esto?
 
-Al disminuir el ancho de la página (o al verda desde un teléfono) veremos que la grilla se rompe.
+Al disminuir el ancho de la página (o al verla desde un teléfono) veremos que la grilla se rompe.
 
 ![](images/9 mobile-first.png)
 
@@ -1106,20 +1282,12 @@ La grilla contiene las siguientes media queries que debemos considerar:
 @media (min-width: @screen-lg-min) { }
 ~~~
 
-###Utilizando columnas para dispositivos específicos
+***
+***
+***
 
-Bootstrap nos permite utilizar columnas especificamente para ciertos dispositivos.
+<h1>UF!!! Mucha información no??? Bueno ahora estás preparadísima para hacer tu primer landing por ti sola! [Ven aquí](mi_primer_landing.md)<h1>
 
-~~~html
-<section class="container">
-	<div class="row">
-		<div class="col-md-6"> 
-		</div>
-		<div class="col-md-6"> 
-		</div>
-	</div>
-</section>
-~~~
 
 
 
