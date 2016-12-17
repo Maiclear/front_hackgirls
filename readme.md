@@ -523,6 +523,7 @@ La etiqueta span es similar a los divs pero sirve para etiquetar texto, una part
 <p> Lorem <span> Ipsum </span> </p>
 ~~~
 
+SI queires ver un resumen de las etiquetas ebtra [aquí](resumen_de_marcas)
 
 ##El inspector de elementos
 El inspector de elementos, es una herramienta que podemos abrirla haciendo click derecho sobre la página y luego inspect nos muestra el código completo de la página y nos permite modificarlo. Con esta herramienta pueden ver el código de cualquier página web. 
@@ -561,9 +562,9 @@ Hay tres formas de incorporar CSS dentro de una página web.
 
 - La tercera forma consiste en utilizar un archivo externo.
 
-La forma recomendada de trabajar es la 3º, pero para explicar como funciona CSS partiremos ocupando la primera forma.
+La forma recomendada de trabajar es la 3º, pero para explicar como funciona CSS ejemplificaremos sobre la primera.
 
-#Sintaxis y primera forma
+##Sintaxis y primera forma
 Todas las instrucciones en CSS se escriben en pares propiedad: valor, para agregar CSS sobre una etiqueta HTML (Primera forma) debes agregar a la etiqueta syle="propiedad: valor"
 
 ## Un ejemplo: color para un párrafo
@@ -574,7 +575,7 @@ Todas las instrucciones en CSS se escriben en pares propiedad: valor, para agreg
 
 Intenta cambiar ahora el color de Body
 
-#Agregando CSS en el head
+##Agregando CSS en el head
 La segunda forma de agregar CSS consiste en agregar las propiedades y valores de CSS dentro de una etiqueta style en el head de la página
 
 ~~~html
@@ -587,7 +588,7 @@ La segunda forma de agregar CSS consiste en agregar las propiedades y valores de
 </head>
 ~~~
 
-##Sintaxis:
+###Sintaxis:
 La sintaxis de css siempre tiene la siguiente estructura:
 
 ~~~css
@@ -724,10 +725,20 @@ Nótese también que ahora no se utilizó darle el color nombrándolo, sino que 
 
 Más Sobre sistema de colores en CSS [aquí](http://htmlcolorcodes.com/es/tutoriales/conceptos-basicos-de-color-css/).
 
-##Tamaño de la fuente:
-Ademas de darle color a la letra también se puede 
+###Tamaño de la fuente :
+Ademas de darle color a la letra también se puede agrandar, achicar, etc...
+Eso se hace utilizando la propiedad `font-size`
 
-## Cambiando las tipografías
+~~~css
+h1 {
+	color: red;
+	font-size: 40px;
+}
+~~~
+
+Aquí se puede ver que además de decirle que sea de color rojo, tenga el tamaño de 40 pixeles (`px`). Puedo agregar cuantas propiedades quiera sobre una etiqueta.
+
+### Cambiando las tipografías
 Para cambiar la tipografía de una marca debemos ocupar la propiedad font-family
 
 ~~~css
@@ -736,52 +747,32 @@ body{ font-family: "Times New Roman", Georgia, Serif; }
 
 font family acepta diversas tipografías simultáneamente a modo de fallback, o sea si una tipografía falla en cargar se cargará la siguiente, si una de los nombres de la tipografía tiene espacios entre medio hay que agregarla entre comillas `" "`
 
-## Googlefonts
+### Googlefonts
 
 [https://www.google.com/fonts
-](www.google.com/fonts) es una página web que permite cargar de forma sencilla diversas tipografías no tan comunes dentro de tu sitio, 
+](https://fonts.google.com/) es una página web que permite cargar de forma sencilla diversas tipografías no tan comunes dentro de tu sitio, 
 
-![imagen google font](images/googlefonts.png)
+![imagen google font](images/google_font.png)
 
-Para utilizarla debes hacer click en la opción `quick use` de la fuente respectiva, luego seleccionar los pesos de la fuente.
+Para utilizarla debes hacer click en la opción `select this font` de la fuente respectiva, luego seleccionar los pesos de la fuente.
 
-Importar la fuente dentro del html o dentro del CSS, por ejemplo si quisieramos importar open sans sería:
+Importar la fuente dentro del html o dentro del CSS, por ejemplo si quisieramos importar open sans dentro del html sería:
 
 ~~~html
-<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> 
 ~~~
 
-y finalmente utilizarla.
+y finalmente utilizarla en nuestro archivo miestilo.css
 
 ~~~css
 body {font-family: 'Open Sans', sans-serif;}
 ~~~
 
-## Alineando textos
+### Alineando textos
 
 <div class="yellow info">
 No debes abusar de esto pues cada tipografía agrega un peso extro a tu página haciendola más lenta de cargar.
 </div>
-
-## Pseudo clases
-
-Las pseudo clases sirven para definir propiedades en base a el estado de un elemento, estas nos permiten  cambiar las propiedades de una marca cuando el mouse se mueve por encima, o cambiar las propiedades de un link que ya ha sido visitado.
-
-La sintaxis para una pseudo clase es selector:estado
-
-Pseudoselectores para links
-
-| Pseudoselector | Ejemplo |
-|----------------|-----------------------------------|
-| unvisited link | ``` a:link { color: #FF0000; } ```|
-| visited link | ```a:visited { color: #00FF00; } ```|
-| selected link | ``` a:active {color: #0000FF;} ``` |
-
-Otros pseudo selectores
-
-| Pseudoselector | Ejemplo |
-|----------------|-----------------------------------|
-| mouse sobre párrafo | ```p:hover { color: #FF00FF;} ```
 
 
 #¿Qué es Bootstrap?
@@ -1032,24 +1023,6 @@ Los thumbnails permiten agregar estilos y bordes de forma sencilla a las imágen
 <aside class="info"> **To thumbnail or not to thumbnail** <br>
 La clase thumbnail puede aplicarse directamente a la imagen o a un div superior, en caso de aplicarse a la imagen perderemos otras propiedades como el redondeado y no podremos poner otro contenido dentro del thumbnail.
 </aside>
-
-##Iframes responsivos
-
-Bootstrap tambien permite convertir iframes en responsive, el proceso es similar pero requiere de dos pasos, en primer lugar al iframe hay que agregarle la clase **embed-responsive-item** en segundo lugar hay que envolver este iframe en otro div, donde se debe especificar las proporciones del iframe.
-
-~~~html
-<!-- 16:9 aspect ratio -->
-<div class="embed-responsive embed-responsive-16by9">
-  <iframe class="embed-responsive-item" src="..."></iframe>
-</div>
-
-<!-- 4:3 aspect ratio -->
-<div class="embed-responsive embed-responsive-4by3">
-  <iframe class="embed-responsive-item" src="..."></iframe>
-</div>
-~~~
-
-16/9 es mas ancho que alto, algo así como una pantalla de cine,  mientras que 4/3 es un poco más cuadrado, cual utilizar es cosa principalmente de gustos.
 
 ##La Grilla
 
