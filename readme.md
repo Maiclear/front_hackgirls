@@ -523,8 +523,15 @@ La etiqueta span es similar a los divs pero sirve para etiquetar texto, una part
 <p> Lorem <span> Ipsum </span> </p>
 ~~~
 
+###Etiquetas semánticas:
 
+HTML5 introduce  etiquetas semánticas, que no aportan ningún comportamiento visual adicional, pero que nos permiten por un lado definir de forma semántica el significado de su contenido, lo que será muy útil para el SEO (la optimización de contenidos para buscadores)
 
+![imgen de etiquetas semanticas](images/semanticas.png)
+
+Si quieres aprender más [aquí](http://www.tutorialmonsters.com/web-semantica-con-html5/)
+
+###Resumen de etiquetas
 Resumen de las etiquetas [aquí](resumen/resumen_de_marcas.md)
 
 ##El inspector de elementos
@@ -729,7 +736,7 @@ Nótese también que ahora no se utilizó darle el color nombrándolo, sino que 
 Más Sobre sistema de colores en CSS [aquí](http://htmlcolorcodes.com/es/tutoriales/conceptos-basicos-de-color-css/).
 
 ###Tamaño de la fuente :
-Ademas de darle color a la letra también se puede cambair el tamaño.
+Ademas de darle color a la letra también se puede cambiar el tamaño.
 Eso se hace utilizando la propiedad `font-size`
 
 ~~~css
@@ -749,7 +756,7 @@ Ahora lo sabrás:
 
 ##ID y Clases
 
-Los **ID** son identifucadores **únicos** para cada etiqueta, es como un nombre que se le da a la etiqueta para hacerla única.
+Los **ID** son identificadores **únicos** para cada etiqueta, es como un nombre que se le da a la etiqueta para hacerla única.
 
 Por ejemplo se le asignará el id "parrafo1" al primer párrafo:
 
@@ -776,9 +783,9 @@ Ahora le asigno el estilo en mi archivo miestilo.css
 }
 	
 ~~~
-Ahora solo mi párrafo con id "parrafo1" tendrá el texto azúl y tamaño de fuente de 10px, y los demás serán verdes y con tamaño de 20px.
+Ahora solo mi párrafo con id "parrafo1" tendrá el texto azul y tamaño de fuente de 10px, y los demás serán verdes y con tamaño de 20px.
 
-Se escribe `#` para referse a una id , y más el nombre para saber a cuál id me estoy refiriendo.
+Se escribe `#` para referirse a una id , y más el nombre para saber a cuál id me estoy refiriendo.
 
 Pero como se mencionaba anteriormente el id es único! Pero qué pasa si se quiere asignar esa propiedad a varias etiquetas distintas?
 
@@ -820,7 +827,7 @@ font family acepta diversas tipografías simultáneamente a modo de fallback, o 
 
 Para utilizarla debes hacer click en la opción `select this font` de la fuente respectiva, luego seleccionar los pesos de la fuente.
 
-Importar la fuente dentro del html o dentro del CSS, por ejemplo si quisieramos importar open sans dentro del html sería:
+Importar la fuente dentro del html o dentro del CSS, por ejemplo si quisiéramos importar open sans dentro del html sería:
 
 ~~~html
 <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> 
@@ -931,7 +938,7 @@ Partamos por las componentes básicas.
 ##Botón
 
 Te diriges a la [documentación](http://getbootstrap.com/) de Bootstrap, luego
-te diriges  a tab `CSS` y encuentra en el manu derecho `Buttons`.
+te diriges  a tab `CSS` y encuentra en el menú derecho `Buttons`.
 Si bajas un poco te encontrarás por ejemplo con esto:
 
 ![imagen de botones](images/botones.png)
@@ -1052,7 +1059,7 @@ La lista de Glyphicons es bastante grande
 
 ![](images/glyphs.png)
 
-se puede consultar en la: [documtación oficial](http://getbootstrap.com/components/#glyphicons-glyphs)
+se puede consultar en la: [documentación oficial](http://getbootstrap.com/components/#glyphicons-glyphs)
 
 ## Imágenes responsive
 
@@ -1130,10 +1137,10 @@ En la [documentación](http://getbootstrap.com/) de bootstrap , te diriges a `Co
   </div><!-- /.container-fluid -->
 </nav>
 ~~~
-*Este código es sólo unaparte de la barra de navegacíon de la imagen, sólo los ítems de la izquierda.*
+*Este código es sólo una parte de la barra de navegación de la imagen, sólo los ítems de la izquierda.*
 
 
-Al ser barra de navegación, pego el código al inicio de nuestro código, luedo de empezado el `<body>`
+Al ser barra de navegación, pego el código al inicio de nuestro código, luego de empezado el `<body>`
 
  
 
@@ -1193,7 +1200,7 @@ Dentro de este row dispondremos de 12 columnas virtuales que podemos agrupar a n
 
 Dentro de cada una estas columnas podemos agregar todo el contenido que queramos y este contenido se adaptará dentro de las columnas.
 
-Si vamos agregar texto o imagenes sería bueno envolver las columnas en un container. (para agregarles márgenes)
+Si vamos agregar texto o imagánes sería bueno envolver las columnas en un container. (para agregarles márgenes)
 
 ~~~html
 <section class="container">
@@ -1247,7 +1254,7 @@ Es bueno analizar de que palabras vienen los nombres de reglas de estilo que pro
 
 ###Mobile First
 
-Bootstrap 3 está construído sobre el concepto de mobile first, esto quiere decir que el primer principio es que la página debe adaptarse al contenido, para eso lo que hace bootstrap es utilizar media queries y desarmar la grilla disponiendo de todo el ancho de la página para presentar su contenido.
+Bootstrap 3 está construido sobre el concepto de mobile first, esto quiere decir que el primer principio es que la página debe adaptarse al contenido, para eso lo que hace bootstrap es utilizar media queries y desarmar la grilla disponiendo de todo el ancho de la página para presentar su contenido.
 
 A menos que especifiquemos lo contrario.
 
@@ -1274,6 +1281,8 @@ La grilla contiene las siguientes media queries que debemos considerar:
 @media (min-width: @screen-lg-min) { }
 ~~~
 
+
+UF!!! Mucho no??? Bueno ahora estás preparadísima para hacer tu primer landing por ti sola! [Ven aquí](mi_primer_landing.md)
 
 
 
