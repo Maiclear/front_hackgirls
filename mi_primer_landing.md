@@ -428,7 +428,7 @@ Una vez vinculada la página, comenzaremos aplicando las reglas generale a nuest
 
 Lo primero que vamos a realizar es definir la tipografía que usaremos y el tamaño de fuente para párrafos para todo el documento
 
-```css3
+```css
 body,html {
   font-size: 16px;
   font-family: 'Open Sans', sans-serif;
@@ -453,7 +453,7 @@ Sigamos! lo segundo que vamos a realizar es agregar algunas cosas en nuestro blo
 
 Lo primero es lo primero, el fondo del bloque!! esto lo hacemos a través de css utilizando la propiedad background, luego background-size para que nos quede cool y logremos que la foto se adapte a la pantalla.
 
-```css3
+```css
 .main {
   background: url('../images/bg22.jpeg') no-repeat ;
   background-size: cover; 
@@ -468,7 +468,7 @@ Y que es esto padding-bottom:50px? es un margen inferior. y esto /* height: 100v
 
 Ahora trabajemos con nuestro título principal (el h1 lo recuerdas?), este título le agregamos una clase llamada headline, ahora la forma correcta de referenciar ésto sería de la siguiente forma
 
-```css3
+```css
 .main .headline {
 ...
 }
@@ -476,7 +476,7 @@ Ahora trabajemos con nuestro título principal (el h1 lo recuerdas?), este títu
 
 Dentro de este bloque definiremos, tipografía, sombras, tamaño, peso de la tipografía y utilizaremos la tipografía lato. El bloque debería lucir de la siguiente forma
 
-```css3
+```css
 .main .headline {
   color: #FFFFFF;
   font-family: 'Lato', cursive;
@@ -496,7 +496,7 @@ Recuerda que para usar lato debes agregar el siguiente código en tu head
 
 Con esto ya verás el título con la tipografía Lato y los estilos que ya aplicamos. Ahora retocaremos el texto de bajada que etiquetamos con la clase __.headline-caption__, a esta clase aplicaremos tamaños de medidas y sombra, además definiremos el color de fuente a blanco. Las reglas CSS serán
 
-```css3
+```css
 .main .headline-caption {
   color: #FFF;
   font-size: 0.9rem;
@@ -507,7 +507,7 @@ Con esto ya verás el título con la tipografía Lato y los estilos que ya aplic
 
 Ahora nos toca la última tarea de la sección header y es retocar el menú. El menú que estamos utilizando, es provisto por bootstrap y provee la funcionalidad responsive, lo que hace que sea muy cool! pero tenemos que adaptarlo a nuestro landing, para ello agregaremos la clase navbar-latam al bloque principal (esto ya lo realizamos cuando construimos el HTML, no lo recuerdas? revisa la sección header del bloque html). Con la clase navbar-latam vamos a sacar el fondo y el borde que tiene el navbar, con ello bastaría para que se acople a nuestro diseño. las reglas que debemos aplicar son las siguientes.
 
-```css3
+```css
 .main .navbar-latam {
   background-color: transparent;
   border-color: transparent;
@@ -516,7 +516,7 @@ Ahora nos toca la última tarea de la sección header y es retocar el menú. El 
 
 Finalmente un pequeño ajuste al logo para que se adapte al tamaño de la pantalla y no crezca más de 150px. (revisa la imagen, es gigante :|)
 
-```css3
+```css
 .main .navbar-brand .logo {
   max-width: 150px;
 }
@@ -529,7 +529,7 @@ Sigamos!! ya nos queda muy poco para terminar. Lo siguiente que vamos a realizar
 
 Para el título vamos a convertirlo en mayusculo y dejarlo en  negritas, esto se hace con
 
-```
+```css
 .block h3 {
   text-transform: uppercase;
   font-weight: bold;
@@ -538,7 +538,7 @@ Para el título vamos a convertirlo en mayusculo y dejarlo en  negritas, esto se
 
 A la imágen de los niños, vamos a definir un ancho máximo y un margen de -10px para que podamos ajustar la posición con respecto al término del bloque, dejando las reglas definidas de la siguiente forma:
 
-```
+```css
 .block .people {
   max-width: 400px;
   margin-bottom: -10px;
@@ -549,7 +549,7 @@ Acá debemos destacar dos cosas, la primera es que la clase block la ocupamos en
 
 Ahora en la siguiente sección, a diferencia de la anterior, el color de fondo es de tono gris. Hay varias formas de solucionar esto, acá te mostraremos una de ellas. Si te fijas en el HTML, este bloque agregamos un clase adicional a block con el nombre alt, gracias a esto podemos seleccionar el block que contenga la clase alt de la siguiente forma
 
-```
+```css
 .block.alt {
   background: #EEE;
   padding-top: 30px;
@@ -562,7 +562,7 @@ Con estas reglas, definimos un fondo gris, margenes interiores al bloque y un bo
 
 Ahora nos quedaría el último bloque, al igual que el anterior, se etiqueto con la clase info. Acá solamente queremos hacer cambiar a los títulos que tienen los bloques. Si te fijas todos los bloques que tienen la clase .block y que contengan un h3 aplicarán las reglas que definimos con anterioridad, pero si quieremos reescribir alguna de ellas, podremos ser más especifico de la siguiente forma
 
-```
+```css
 .block.info h3 {
   font-size: 1.2rem;
   text-transform: capitalize;
@@ -575,13 +575,15 @@ Acá solo estamos creando una regla más especifica que sobre-escribirá aquella
 Hemos llegado al final, asi que alegrate!! el footer es simple y solo cuenta con un parrafo que debemos ajustar algunas cosas de tamaño, color y espaciado, asi que aquí vamos.
 
 Lo primero es colocar el color de fondo al footer que será #383838, esto lo hacemos de la siguiente forma
-```
+
+```css
 footer {
   background: #383838;
 }
 ```
 Ahora nos falta aplicar las reglas al parrafo que está dentro de la etiqueta footer, esto lo hacemos de la siguiente forma
-```
+
+```css
 footer p {
   color: #FFF;
   height: 30px;
