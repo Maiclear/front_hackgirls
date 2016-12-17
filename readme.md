@@ -562,7 +562,7 @@ Hay tres formas de incorporar CSS dentro de una página web.
 
 - La tercera forma consiste en utilizar un archivo externo.
 
-La forma recomendada de trabajar es la 3º, pero para explicar como funciona CSS ejemplificaremos sobre la primera.
+La **forma recomendada de trabajar es la 3º**, pero para explicar como funciona CSS ejemplificaremos sobre la primera y se dará una breve explicación de la segunda.
 
 ##Sintaxis y primera forma
 Todas las instrucciones en CSS se escriben en pares propiedad: valor, para agregar CSS sobre una etiqueta HTML (Primera forma) debes agregar a la etiqueta syle="propiedad: valor"
@@ -576,6 +576,7 @@ Todas las instrucciones en CSS se escriben en pares propiedad: valor, para agreg
 Intenta cambiar ahora el color de Body
 
 ##Agregando CSS en el head
+ 
 La segunda forma de agregar CSS consiste en agregar las propiedades y valores de CSS dentro de una etiqueta style en el head de la página
 
 ~~~html
@@ -726,17 +727,47 @@ Nótese también que ahora no se utilizó darle el color nombrándolo, sino que 
 Más Sobre sistema de colores en CSS [aquí](http://htmlcolorcodes.com/es/tutoriales/conceptos-basicos-de-color-css/).
 
 ###Tamaño de la fuente :
-Ademas de darle color a la letra también se puede agrandar, achicar, etc...
+Ademas de darle color a la letra también se puede cambair el tamaño.
 Eso se hace utilizando la propiedad `font-size`
 
 ~~~css
-h1 {
-	color: red;
-	font-size: 40px;
+p {
+	color: green;
+	font-size: 20px;
 }
 ~~~
 
-Aquí se puede ver que además de decirle que sea de color rojo, tenga el tamaño de 40 pixeles (`px`). Puedo agregar cuantas propiedades quiera sobre una etiqueta.
+Aquí se puede ver que además de decirle a los párrafos que sean de color rojo, tenga el tamaño de 40 pixeles (`px`). Puedo agregar cuantas propiedades quiera sobre una etiqueta.
+
+Pero esto hará que **todos** los párrafos se comporten de esa manera (que tengan el texto verde y tamaño de letra de 20 px).
+
+**¿Cómo hago para personalizar el cambio de una etiqueta específica?**
+
+Ahora lo sabrás:
+
+##ID y Clases
+
+Los **ID** son identifucadores **únicos** para cada etiqueta, es como un nombre que se le da a la etiqueta para hacerla única.
+
+Por ejemplo se le asignará el id "parrafo1" al primer párrafo:
+
+~~~html
+<p id="parrafo1" > Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+Ipsam consequuntur omnis minima dolorem adipisci officiis enim 
+optio tenetur quos aliquid, saepe, corporis dignissimos? 
+Harum debitis veritatis voluptas, illum iste deserunt.
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+Quo dolorem dignissimos expedita repellendus ducimus natus 
+possimus, molestiae architecto, aperiam officiis, amet consequatur,
+ nisi. Est accusamus eum quos natus architecto modi </p>
+ 
+~~~
+
+De esta manera yo le puedo dar estilo específico a ese párrafo y no a todos.
+
+Como se esc
+
+
 
 ### Cambiando las tipografías
 Para cambiar la tipografía de una marca debemos ocupar la propiedad font-family
@@ -768,11 +799,7 @@ y finalmente utilizarla en nuestro archivo miestilo.css
 body {font-family: 'Open Sans', sans-serif;}
 ~~~
 
-### Alineando textos
-
-<div class="yellow info">
-No debes abusar de esto pues cada tipografía agrega un peso extro a tu página haciendola más lenta de cargar.
-</div>
+Hay muchas propiedades en CSS, [aquí](http://www.mclibre.org/consultar/htmlcss/css/css_propiedades.html) un listado de algunas.
 
 
 #¿Qué es Bootstrap?
@@ -808,7 +835,7 @@ bootstrap/
     └── examples/
 </pre>
 
-<aside class="info"> Un CDN es una especie de página web para descargar contenido, pero está optimizada para la descarga rápida de assets, además que los CDN tienen servidores en diversas partes del mundo disminuyendo el impacto en la velocidad por distancia.
+<aside class="info yellow"> Un CDN es una especie de página web para descargar contenido, pero está optimizada para la descarga rápida de assets, además que los CDN tienen servidores en diversas partes del mundo disminuyendo el impacto en la velocidad por distancia.
 </aside>
 
 #El primer template con bootstrap
@@ -861,12 +888,31 @@ Para detectar si hay conflictos con las rutas que pusimos para los assets de boo
 
 ![](images/inspector.png)
 
-<aside class="warning"> Abrir el tab no es suficiente, hay que recargar la página con el tab network abierto para obtener la información. </aside>
+<aside class="info yellow"> Abrir el tab no es suficiente, hay que recargar la página con el tab network abierto para obtener la información. </aside>
 
 Un error típico que podemos detectar de esta forma es la no inclusión (o la inclusión posterior) de Jquery, el javascript de bootstrap depende de Jquery para su funcionamiento, por lo que no incluirlo o hacerlo después mostrará un error y no funcionará correctamente la capa de javascript de bootstrap.
 
 # Comenzando con bootstrap
 Partamos por las componentes básicas.
+
+##Botón
+
+Te diriges a la [documentación](http://getbootstrap.com/) de Bootstrap, luego
+te diriges  a tab `CSS` y encuentra en el manu derecho `Buttons`.
+Si bajas un poco te encontrarás por ejemplo con esto:
+
+![imagen de botones](images/botones.png)
+
+La documentación de Bootstrap es muy amigable como ves, te muestra el código y el ejemplo de cómo quedará ese código.
+
+Por ejemplo quiero ese botón verde (Succes), simplemente copiamos el código respectivo y pegamos en nuestro archivo html donde se quiera que aparezca.
+
+~~~html
+<button type="button" class="btn btn-success">Success</button>
+~~~
+Entonces que pasa aquí, se utiliza la etiqueta button (para que sepa que es un botón) se le dice que es de tipo botón y se le **agrega la clase** `btn` **y además la clase** `btn-success` para darle las propiedades de css que lo dejan como muestra la imagen.
+
+Esta es una de las maravillas de Bootstrap! Puedes asignarle diseño, propiedades y más por medio de clases predeterminadas por Bootstrap.
 
 ##Jumbotron
 Es una componente lightweight y flexible que permite mostrar texto o imágenes de forma resaltada en el sitio, ideal para la propuesta de valor del landing page
@@ -1095,7 +1141,6 @@ Entonces resumiendo: Se empieza por añadiendo la clase `.row`, esto creará un 
 
 ###Utilizando columnas para dispositivos específicos
 
-
 Es bueno analizar de que palabras vienen los nombres de reglas de estilo que provee Bootstrap:
 
 
@@ -1127,8 +1172,6 @@ Es bueno analizar de que palabras vienen los nombres de reglas de estilo que pro
 </table>
 
 *Donde* ` * ` es el número de columnas.
-
-Si quieres aprender más sobre el sistema de grillas de boostrap [aquí](
 
 
 ###Mobile First
