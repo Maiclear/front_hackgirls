@@ -523,6 +523,8 @@ La etiqueta span es similar a los divs pero sirve para etiquetar texto, una part
 <p> Lorem <span> Ipsum </span> </p>
 ~~~
 
+
+
 Resumen de las etiquetas [aquí](resumen/resumen_de_marcas.md)
 
 ##El inspector de elementos
@@ -845,7 +847,7 @@ Utilizar bootstrap completamente por defecto y no personalizarlo da un toque gen
 
 
 #Descargando bootstrap
-Hay dos formas, la primera es el CDN, la segunda descargando los archivos.
+Hay dos formas, la primera es el [CDN](https://www.bootstrapcdn.com/), la segunda descargando los archivos.
 
 El CDN consiste simplemente en 2 archivos CSS y un archivo JS que deben ser linkeados en la página.
 
@@ -1028,7 +1030,7 @@ Algo muy distinto sucede cuando ponemos el jumbotron dentro de un container.
 
 Como vemos en la imagen nos damos cuenta que ahora el jumbotron no está pegado al borde de la página, y además ahora es el borde del jumbotron el que está alineado con el texto de los otros containers.
 
-<aside class="success"> **¿Cuál método utilizar?** <br> Depende de lo que se quiera hacer, todos los métodos previos son correctos </aside>
+<aside class="yellow "> **¿Cuál método utilizar?** <br> Depende de lo que se quiera hacer, todos los métodos previos son correctos </aside>
 
 ## Glyphicons
 
@@ -1072,7 +1074,7 @@ Además hay clases que pueden ayudarnos a darle formas a las imágenes.
 <img src="..." alt="..." class="img-thumbnail">
 ~~~
 
-<aside class="warning"> **width vs max-widht** <br> debemos tener cuidado con la propiedad max-width porque esta no cambiará el tamaño de las fotos que son menores al espacio disponible. </aside>
+<aside class="yellow"> **width vs max-widht** <br> debemos tener cuidado con la propiedad max-width porque esta no cambiará el tamaño de las fotos que son menores al espacio disponible. </aside>
  
 ## Thumbnails
  
@@ -1097,9 +1099,47 @@ Los thumbnails permiten agregar estilos y bordes de forma sencilla a las imágen
 
 ![](images/thumbnail.png)
 
-<aside class="info"> **To thumbnail or not to thumbnail** <br>
+<aside class="info yellow"> **To thumbnail or not to thumbnail** <br>
 La clase thumbnail puede aplicarse directamente a la imagen o a un div superior, en caso de aplicarse a la imagen perderemos otras propiedades como el redondeado y no podremos poner otro contenido dentro del thumbnail.
 </aside>
+
+## NavBar
+
+En la [documentación](http://getbootstrap.com/) de bootstrap , te diriges a `Components` , y ahí encontrarás varios componentes entre ellos ejemplos de  barra de navegación. (En menú derecho `Navbar`)
+
+![nav](images/navbar.png)
+
+~~~html
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">Link</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+~~~
+*Este código es sólo unaparte de la barra de navegacíon de la imagen, sólo los ítems de la izquierda.*
+
+
+Al ser barra de navegación, pego el código al inicio de nuestro código, luedo de empezado el `<body>`
+
+ 
+
+
+
+
 
 ##La Grilla
 
