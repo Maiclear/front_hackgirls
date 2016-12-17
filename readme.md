@@ -739,7 +739,7 @@ p {
 
 Aquí se puede ver que además de decirle a los párrafos que sean de color rojo, tenga el tamaño de 40 pixeles (`px`). Puedo agregar cuantas propiedades quiera sobre una etiqueta.
 
-Pero esto hará que **todos** los párrafos se comporten de esa manera (que tengan el texto verde y tamaño de letra de 20 px).
+Pero esto hará que **todos** los párrafos se comporten de esa manera (que tengan el texto verde y tamaño de letra de 20px).
 
 **¿Cómo hago para personalizar el cambio de una etiqueta específica?**
 
@@ -765,8 +765,39 @@ possimus, molestiae architecto, aperiam officiis, amet consequatur,
 
 De esta manera yo le puedo dar estilo específico a ese párrafo y no a todos.
 
-Como se esc
+Ahora le asigno el estilo en mi archivo miestilo.css
 
+~~~css
+#parrafo1 {
+	color: blue;
+	font-size: 10px;
+}
+	
+~~~
+Ahora solo mi párrafo con id "parrafo1" tendrá el texto azúl y tamaño de fuente de 10px, y los demás serán verdes y con tamaño de 20px.
+
+Se escribe `#` para referse a una id , y más el nombre para saber a cuál id me estoy refiriendo.
+
+Pero como se mencionaba anteriormente el id es único! Pero qué pasa si se quiere asignar esa propiedad a varias etiquetas distintas?
+
+Para eso existen las **clases**. Las clases es como un identificador pero **no** único.
+
+~~~html
+<h1 class="violeta" > Evento Hack Rails </h1>
+
+<h3 class="violeta" >Por más mujeres en emprendimiento y tecnología</h3>
+~~~
+
+Aquí se le está asignando la misma clase a 2 etiquetas distintas (`<h1>`y `<h3>`).
+Luego en el archivo css
+
+~~~css
+.violeta {
+	color: violet;
+}	
+~~~
+
+Con esto hago que dos etiquetas distintas (o cuantas yo quiera), tengan el contenido de color violeta.
 
 
 ### Cambiando las tipografías
