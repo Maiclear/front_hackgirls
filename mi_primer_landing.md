@@ -410,5 +410,193 @@ Finalmente nos queda definir el pie de la página. Esto será simple y se reduce
 Con esto ya tenemos nuestro código base para comenzar a pintar. Te perdiste? no te preocupes [acá](images/demos/index.html) puedes revisar el código completo. 
 
 ## Colocando un poco de color (CSS)
-... pendiente
+### Sección header
+Lo primero que debemos hacer es linkear nuestra hoja de estilo con el html que estamos construyendo. Para ello vamos a crear un archivo vacío dentro de la carpeta css y lo nombraremos como ***style.css***
+El segundo paso es vincularlo con nuestro html, para ello colocaremos el siguiente código en nuestra cabecera
 
+```html
+<head>
+ ...
+  <link rel="stylesheet" href="css/style.css">
+ 
+</head>>
+```
+
+Muy importante respetar donde crear los archivos, ya que si cambias la ubicación, nuestro html no lo podrá encontrar.
+
+Una vez vinculada la página, comenzaremos aplicando las reglas generale a nuestro documento.
+
+Lo primero que vamos a realizar es definir la tipografía que usaremos y el tamaño de fuente para párrafos para todo el documento
+
+```css3
+body,html {
+  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
+}
+```
+
+Para poder usar Open Sans debemos cargar esta fuente en nuestra cabecera del documento HTML. (si quieres saber más sobre tipografías te recomiendo este [link](#))
+
+```html
+<head>
+ ...
+ <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+ ...
+  <link rel="stylesheet" href="css/style.css">
+ 
+</head>>
+```
+
+Si refrescas la página notarás un pequeño cambio en las tipografías.
+
+Sigamos! lo segundo que vamos a realizar es agregar algunas cosas en nuestro bloque header (lo recuerdas?)
+
+Lo primero es lo primero, el fondo del bloque!! esto lo hacemos a través de css utilizando la propiedad background, luego background-size para que nos quede cool y logremos que la foto se adapte a la pantalla.
+
+```css3
+.main {
+  background: url('../images/bg22.jpeg') no-repeat ;
+  background-size: cover; 
+
+  padding-bottom: 50px;
+
+  /* height: 100vh ; */
+}
+```
+
+Y que es esto padding-bottom:50px? es un margen inferior. y esto /* height: 100vh ; */ eso es un comentario por lo que no śe considera al momento de renderizar la página.
+
+Ahora trabajemos con nuestro título principal (el h1 lo recuerdas?), este título le agregamos una clase llamada headline, ahora la forma correcta de referenciar ésto sería de la siguiente forma
+
+```css3
+.main .headline {
+...
+}
+```
+
+Dentro de este bloque definiremos, tipografía, sombras, tamaño, peso de la tipografía y utilizaremos la tipografía lato. El bloque debería lucir de la siguiente forma
+
+```css3
+.main .headline {
+  color: #FFFFFF;
+  font-family: 'Lato', cursive;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 2.4rem;
+  margin-bottom: 1.8rem;
+  text-shadow: 0px 0px 24px rgba(0, 0, 0, 0.98);
+}
+```
+
+Recuerda que para usar lato debes agregar el siguiente código en tu head
+
+```html
+<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+```
+
+Con esto ya verás el título con la tipografía Lato y los estilos que ya aplicamos. Ahora retocaremos el texto de bajada que etiquetamos con la clase ___.headline-caption__, a esta clase aplicaremos tamaños de medidas y sombra, además definiremos el color de fuente a blanco. Las reglas CSS serán
+
+```css3
+.main .headline-caption {
+  color: #FFF;
+  font-size: 0.9rem;
+  margin-top: 1.8px;
+  text-shadow: 0px 0px 24px rgba(0, 0, 0, 0.98);
+}
+```
+
+Ahora nos toca la última tarea de la sección header y es retocar el menú. El menú que estamos utilizando, es provisto por bootstrap y provee la funcionalidad responsive, lo que hace que sea muy cool! pero tenemos que adaptarlo a nuestro landing, para ello agregaremos la clase navbar-latam al bloque principal (esto ya lo realizamos cuando construimos el HTML, no lo recuerdas? revisa la sección header del bloque html). Con la clase navbar-latam vamos a sacar el fondo y el borde que tiene el navbar, con ello bastaría para que se acople a nuestro diseño. las reglas que debemos aplicar son las siguientes.
+
+```css3
+.main .navbar-latam {
+  background-color: transparent;
+  border-color: transparent;
+}
+```
+
+Finalmente un pequeño ajuste al logo para que se adapte al tamaño de la pantalla y no crezca más de 150px. (revisa la imagen, es gigante :|)
+
+```css3
+.main .navbar-brand .logo {
+  max-width: 150px;
+}
+```
+
+Con esto ya tenemos listo el header. Tomemos un descanzo y seguimos con las otras secciones.
+
+### Secciones de contenido
+Sigamos!! ya nos queda muy poco para terminar. Lo siguiente que vamos a realizar es la primera sección de nuestro sitio. Esta sección estaba clasificada por clase .block. Dentro de esta sección tenemos un título, parrafo y una imagen (que está clasificada con la clase .people).
+
+Para el título vamos a convertirlo en mayusculo y dejarlo en  negritas, esto se hace con
+
+```
+.block h3 {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+```
+
+A la imágen de los niños, vamos a definir un ancho máximo y un margen de -10px para que podamos ajustar la posición con respecto al término del bloque, dejando las reglas definidas de la siguiente forma:
+
+```
+.block .people {
+  max-width: 400px;
+  margin-bottom: -10px;
+}
+```
+
+Acá debemos destacar dos cosas, la primera es que la clase block la ocupamos en el resto de las secciones, esto lo genial de las clases y es que se pueden reutilizar, asi que con estas reglas se aplicarán a todos los bloques posteriores y no tendremos que ir colocando bloque a bloque!
+
+Ahora en la siguiente sección, a diferencia de la anterior, el color de fondo es de tono gris. Hay varias formas de solucionar esto, acá te mostraremos una de ellas. Si te fijas en el HTML, este bloque agregamos un clase adicional a block con el nombre alt, gracias a esto podemos seleccionar el block que contenga la clase alt de la siguiente forma
+
+```
+.block.alt {
+  background: #EEE;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-top: 1px solid #CCC;
+  border-bottom: 1px solid #CCC;
+}
+```
+Con estas reglas, definimos un fondo gris, margenes interiores al bloque y un border solido de color gris en la parte superior e inferior del bloque. Guarda y refresca la página y verás como queda!
+
+Ahora nos quedaría el último bloque, al igual que el anterior, se etiqueto con la clase info. Acá solamente queremos hacer cambiar a los títulos que tienen los bloques. Si te fijas todos los bloques que tienen la clase .block y que contengan un h3 aplicarán las reglas que definimos con anterioridad, pero si quieremos reescribir alguna de ellas, podremos ser más especifico de la siguiente forma
+
+```
+.block.info h3 {
+  font-size: 1.2rem;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+```
+Acá solo estamos creando una regla más especifica que sobre-escribirá aquellas reglas que ya estén definidas con anterioridad. Listo! terminamos con los bloques, solo nos queda el footer!
+
+### Sección footer
+Hemos llegado al final, asi que alegrate!! el footer es simple y solo cuenta con un parrafo que debemos ajustar algunas cosas de tamaño, color y espaciado, asi que aquí vamos.
+
+Lo primero es colocar el color de fondo al footer que será #383838, esto lo hacemos de la siguiente forma
+```
+footer {
+  background: #383838;
+}
+```
+Ahora nos falta aplicar las reglas al parrafo que está dentro de la etiqueta footer, esto lo hacemos de la siguiente forma
+```
+footer p {
+  color: #FFF;
+  height: 30px;
+  letter-spacing: 0.2rem;
+  font-weight: bold;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  line-height: 40px;
+}
+```
+Acá hacemos varias cosas y las detallo. Primero dejamos el color de la fuente en blanco, el alto del bloque lo definimos en 30px, el espaciado entre cada letra lo dejamos en 0.2rem, dejamos la fuente en bold, definimos el tamaño de fuente en 1.1rem y dejamos todo en mayuscula a través de text-transform y finalmente el interlineado será de 40px, este último paso podría ser un truco para centrar el contenido de forma vertical. Pruebalo y revisa como se ve en tu navegador!
+
+## Desafío extra con Bootswatch
+
+Pensaste que era todo? nos falta la guinda de la torta. Bootstrap nos provee algunos temas que definen los elementos bases que ya estamos utilizando en nuestro proyecto, como los botones, menús, entre otros. Para ello utilizaremos [Bootswatch](https://bootswatch.com/) que nos entrega varias alternativas. Revisa la que más te guste, descarga el archivo bootstrap.css y reemplazalo por el que ya tienes en tu carpeta css (si no quieres perder los estilos bases, realiza una copia antes de reemplazar el archivo). Al reemplazar los estilos, verás como nuestro landing tomará otra personalidad!
+
+
+Saludos!
