@@ -1281,8 +1281,11 @@ La grilla contiene las siguientes media queries que debemos considerar:
 @media (min-width: @screen-lg-min) { }
 ~~~
 
+***
+***
+***
 
-UF!!! Mucho no??? Bueno ahora estás preparadísima para hacer tu primer landing por ti sola! [Ven aquí](mi_primer_landing.md)
+<h1>UF!!! Mucha información no??? Bueno ahora estás preparadísima para hacer tu primer landing por ti sola! [Ven aquí](mi_primer_landing.md)<h1>
 
 
 
