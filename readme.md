@@ -1269,7 +1269,7 @@ A menos que especifiquemos lo contrario.
 
 Al disminuir el ancho de la página (o al verla desde un teléfono) veremos que la grilla se rompe.
 
-![](images/9 mobile-first.png)
+<img src="images/9 mobile-first.png">
 
 ###Media queries
 
