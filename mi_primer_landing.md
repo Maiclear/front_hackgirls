@@ -10,6 +10,7 @@ Como desafío vamos enseñar a construir el siguiente landing page
 Ya verás que con bootstrap no es complejo y podremos poner nuestros conocimientos en práctica, asi que manos a la obra!!.
 
 ## Iniciando el proyecto
+
 Lo primero que debemos hacer es instalar bootstrap, para esto existen diferentes mecanismos de instalación, pero solo utilizaremos una de ellas, comencemos!
 
 Primero debemos descargar los archivos fuentes de bootstrap. Para ello hacemos click en el siguiente [enlace](https://github.com/twbs/bootstrap/releases/download/v3.3.7/bootstrap-3.3.7-dist.zip) 
@@ -39,6 +40,7 @@ bootstrap_demo/
 ``` 
 
 ## Configuración template básico
+
 Ahora debemos crear un archivo nuevo que lo nombraremos __index.html__ (puede ser cualquier nombre). 
 
 Debemos abrir el archivo nuevo con nuestro editor de texto sublime text. En el contenido del archivo __index.html__ debemos copiar y pegar el siguiente contenido.
@@ -91,6 +93,7 @@ Si nos aparece lo siguiente
 Todo está funcionando. 
 
 ## Definiendo las secciones de nuestro landing
+
 Para construir nuestro landing lo primero que debemos es mirar nuestro diseño y segmentarlo en los diferentes bloques que estan propuestos, para definir cada bloque utilizaremos de forma correcta las etiquetas de HTML5 como header, footer, aside y section. 
 
 ![imagen etique html5](images/sections.png)
@@ -410,7 +413,9 @@ Finalmente nos queda definir el pie de la página. Esto será simple y se reduce
 Con esto ya tenemos nuestro código base para comenzar a pintar. Te perdiste? no te preocupes [acá](images/demos/index.html) puedes revisar el código completo. 
 
 ## Colocando un poco de color (CSS)
+
 ### Sección header
+
 Lo primero que debemos hacer es linkear nuestra hoja de estilo con el html que estamos construyendo. Para ello vamos a crear un archivo vacío dentro de la carpeta css y lo nombraremos como ***style.css***
 El segundo paso es vincularlo con nuestro html, para ello colocaremos el siguiente código en nuestra cabecera
 
@@ -525,6 +530,7 @@ Finalmente un pequeño ajuste al logo para que se adapte al tamaño de la pantal
 Con esto ya tenemos listo el header. Tomemos un descanzo y seguimos con las otras secciones.
 
 ### Secciones de contenido
+
 Sigamos!! ya nos queda muy poco para terminar. Lo siguiente que vamos a realizar es la primera sección de nuestro sitio. Esta sección estaba clasificada por clase .block. Dentro de esta sección tenemos un título, parrafo y una imagen (que está clasificada con la clase .people).
 
 Para el título vamos a convertirlo en mayusculo y dejarlo en  negritas, esto se hace con
@@ -572,6 +578,7 @@ Ahora nos quedaría el último bloque, al igual que el anterior, se etiqueto con
 Acá solo estamos creando una regla más especifica que sobre-escribirá aquellas reglas que ya estén definidas con anterioridad. Listo! terminamos con los bloques, solo nos queda el footer!
 
 ### Sección footer
+
 Hemos llegado al final, asi que alegrate!! el footer es simple y solo cuenta con un parrafo que debemos ajustar algunas cosas de tamaño, color y espaciado, asi que aquí vamos.
 
 Lo primero es colocar el color de fondo al footer que será #383838, esto lo hacemos de la siguiente forma

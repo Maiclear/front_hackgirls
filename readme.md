@@ -2,7 +2,7 @@
 
 GUÍA HACKGIRLS - FRONT DAY
 
-![logo emprendedoras](images/logo_emp.png)
+![logo HackGirls](images/hackgirls.png)
 
 </section>
 <section>
@@ -11,11 +11,12 @@ GUÍA HACKGIRLS - FRONT DAY
 
 En Chile, A nivel urbano nacional, el 20% de las mujeres ocupadas en Chile son “trabajadoras por cuenta propia”, según la encuesta Voz de Mujer (cifra que coincide con la entregada por la última Casen). En tanto, solo el 3% son “patrón o empleadora”, lo cuál correspondería a empresarias.
 
-El propósito de EmprededorasClub es cambiar esta realidad, a través de la entrega de conocimientos y herramientas que faciliten la creación de empresas y tecnología.
+El propósito de HackGirls es cambiar esta realidad, a través de la entrega de conocimientos y herramientas que faciliten la creación de empresas y tecnología.
 
 Front Day es un evento con el objetivo de entregar conocimientos básicos de programación web a mujeres programadoras para que puedan construir y supervisar la construcción de las páginas web de sus empresas.
 
 #Qué se necesita para este taller:
+
 Un navegador web y un editor de texto.
 Descarga Sublime Text [aquí](https://www.sublimetext.com/).
 
@@ -84,6 +85,7 @@ Entonces al abrirlo en el navegador te debería aparecer algo como esto:
 Felicidades!!	Ya estás escribiendo tu primera página web!!!
 
 #¿Qué es HTML?
+
 ***
 
 HTML es un simple código que es interpretado por el navegador web - como Chrome, Firefox o Safari - para mostrar una página web al usuario.
@@ -122,6 +124,7 @@ En HTML5 la etiqueta `<head>` puede ser omitida, en ese caso todo lo que esté a
 
 
 ##El título
+
 Muestra en el navegador el título de la página, se escribe entre las marcas `<title>` y `</title>` y tiene la función de ser una guía visual del contenido de la ventana o del tab del navegador.
 
 ~~~html
@@ -144,6 +147,7 @@ Cabe destacar que Los bookmarks ocupan el título de la página cuando se guarda
 
 
 ##Codificación
+
 Agregaremos la codificación (estándar que define el cómo se muestran las letras en el HTML) para que el navegador muestre los textos correctamente y entienda cuando hemos agregado una letra distinta, como por ejemplo la ñ. Para agregar esto hay que agregar la siguiente línea dentro de las marcas `<head>` `</head>` :
 
 `<meta charset="utf-8">`
@@ -166,11 +170,13 @@ La página debería quedar así:
 <div class=" info yellow"> Sin el meta charset los tildes y ñ (caracteres especiales) no se verán correctamente dentro de nuestro documento </div>
 
 ##Atributos y valores
+
 En la etiqueta `<meta charset="utf-8">` vemos que hay algo nuevo que no habíamos visto en otras etiquetas, en primer lugar la marca no se cierra, y la regla es simple, si la etiqueta no tiene contenido no se cierra, y para pasarle valores adicionales se ocupan **atributos** y **valores**, donde `charset` sería el *atributo* y `utf-8` el *valor*.
 
 Son diversos los atributos y valores que se pueden pasar a cada etiqueta, dos atributos muy importantes que estudiaremos más adelante son el **id** y la **clase**.
 
 ##Cabeza y cuerpo
+
 La información de la página dentro del head es para el navegador, la información que está dentro del cuerpo es para el usuario. 
 
 <div class="info yellow">
@@ -404,7 +410,7 @@ Hagamos un pequeño resumen de lo que hemos aprendido:
 </head>
 <body>
 
-<img src="images/logo_emp.png" alt="logo EmprendedorasClub">
+<img src="images/hackgirls.png" alt="logo HackGirls">
 
 <h1> Evento Hack Rails </h1>
 
@@ -666,7 +672,7 @@ Tomando lo anterior:
 </head>
 <body>
 
-<img src="images/logo_emp.png" alt="logo EmprendedorasClub">
+<img src="images/hackgirls.png" alt="logo HackGirls">
 
 <h1> Evento Hack Rails </h1>
 
@@ -1266,6 +1272,7 @@ Al disminuir el ancho de la página (o al verla desde un teléfono) veremos que 
 ![](images/9 mobile-first.png)
 
 ###Media queries
+
 La grilla contiene las siguientes media queries que debemos considerar:
 
 ~~~css
@@ -1286,7 +1293,7 @@ La grilla contiene las siguientes media queries que debemos considerar:
 ***
 ***
 
-<h1>UF!!! Mucha información no??? Bueno ahora estás preparadísima para hacer tu primer landing por ti sola! [Ven aquí](mi_primer_landing.md)<h1>
+<h1>UF!!! Mucha información no??? Bueno ahora estás preparadísima para hacer tu primer landing por ti sola! [Ven aquí](mi_primer_landing.md) <h1>
 
 
 
