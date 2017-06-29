@@ -7,7 +7,7 @@ GUÍA HACKGIRLS - FRONT DAY
 </section>
 <section>
 
-#Introducción#
+#Introducción
 
 En Chile, A nivel urbano nacional, el 20% de las mujeres ocupadas en Chile son “trabajadoras por cuenta propia”, según la encuesta Voz de Mujer (cifra que coincide con la entregada por la última Casen). En tanto, solo el 3% son “patrón o empleadora”, lo cuál correspondería a empresarias.
 
