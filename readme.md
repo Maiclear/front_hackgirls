@@ -15,7 +15,7 @@ El propósito de HackGirls es cambiar esta realidad, a través de la entrega de 
 
 Front Day es un evento con el objetivo de entregar conocimientos básicos de programación web a mujeres programadoras para que puedan construir y supervisar la construcción de las páginas web de sus empresas.
 
-#Qué se necesita para este taller:
+# Qué se necesita para este taller:
 
 Un navegador web y un editor de texto.
 Descarga Sublime Text [aquí](https://www.sublimetext.com/).
