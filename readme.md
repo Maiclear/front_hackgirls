@@ -1,6 +1,6 @@
 <section class="cover">
 
-GUÍA HACKGIRLS - FRONT DAY
+# GUÍA HACKGIRLS - FRONT DAY
 
 ![logo HackGirls](images/hackgirls.png)
 
