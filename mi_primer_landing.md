@@ -1,4 +1,4 @@
-#Mi primer landing page
+# Mi primer landing page
 
 Genial ahora pondremos en práctica lo que aprendimos de HTML y CSS pero agregaremos un componente nuevo y es bootstrap. imagino que estas pensando que es bootstrap, bueno Boostrap es un framework mobile first desarrollado por la gente de Twitter y liberado a la comunidad; nos permite desarrollar sitios web responsive e interfaces de forma rápida combinando CSS, HTML5 y Jquery, y es eso lo que vamos a realizar ahora.
 
