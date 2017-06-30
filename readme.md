@@ -32,7 +32,7 @@ Cómo editor de texto te recomendamos:
 
 - [Sublime](https://www.sublimetext.com/)
 
-#Qué es una página web
+# Qué es una página web
 
 De entrada podemos preguntarnos qué es una página web. Habrían dos respuestas: para el **usuario** y para el **diseñador**.
 
@@ -42,7 +42,7 @@ Para el **diseñador** una página WEB es un documento construido para mostrar i
 
 Una serie de páginas web interconectas e interrelacionadas de alguna forma (el mismo tema, el mismo objetivo...) forman un sitio web, que habitualmente está almacenado en un servidor.
 
-#Creando nuestra primera página web:
+# Creando nuestra primera página web:
 
 Vamos a crear un proyecto totalmente desde cero.
 
@@ -84,7 +84,7 @@ Entonces al abrirlo en el navegador te debería aparecer algo como esto:
 
 Felicidades!!	Ya estás escribiendo tu primera página web!!!
 
-#¿Qué es HTML?
+# ¿Qué es HTML?
 
 ***
 
@@ -123,7 +123,7 @@ La etiqueta `<html>` especifica que desde ese punto en adelante todo lo que veng
 En HTML5 la etiqueta `<head>` puede ser omitida, en ese caso todo lo que esté antes de body será considerado como head. Por otro lado, esta es una etiqueta que especifica el contenido que se le entregará al navegador y que sea necesario para mostrar correctamente la página. Contendrá información variada, desde dónde encontrar las hojas de estilo o los íconos, hasta cuál es el título del sitio o sencillamente cómo debe manejar la página en el caso de que tenga que adaptarse a distintos tamaños de pantalla.
 
 
-##El título
+## El título
 
 Muestra en el navegador el título de la página, se escribe entre las marcas `<title>` y `</title>` y tiene la función de ser una guía visual del contenido de la ventana o del tab del navegador.
 
@@ -146,7 +146,7 @@ Cabe destacar que Los bookmarks ocupan el título de la página cuando se guarda
 </div>
 
 
-##Codificación
+## Codificación
 
 Agregaremos la codificación (estándar que define el cómo se muestran las letras en el HTML) para que el navegador muestre los textos correctamente y entienda cuando hemos agregado una letra distinta, como por ejemplo la ñ. Para agregar esto hay que agregar la siguiente línea dentro de las marcas `<head>` `</head>` :
 
@@ -169,13 +169,13 @@ La página debería quedar así:
 
 <div class=" info yellow"> Sin el meta charset los tildes y ñ (caracteres especiales) no se verán correctamente dentro de nuestro documento </div>
 
-##Atributos y valores
+## Atributos y valores
 
 En la etiqueta `<meta charset="utf-8">` vemos que hay algo nuevo que no habíamos visto en otras etiquetas, en primer lugar la marca no se cierra, y la regla es simple, si la etiqueta no tiene contenido no se cierra, y para pasarle valores adicionales se ocupan **atributos** y **valores**, donde `charset` sería el *atributo* y `utf-8` el *valor*.
 
 Son diversos los atributos y valores que se pueden pasar a cada etiqueta, dos atributos muy importantes que estudiaremos más adelante son el **id** y la **clase**.
 
-##Cabeza y cuerpo
+## Cabeza y cuerpo
 
 La información de la página dentro del head es para el navegador, la información que está dentro del cuerpo es para el usuario. 
 
@@ -187,13 +187,13 @@ El navegador lee dentro de ambas etiquetas, pero las del head no las muestras, l
 
 
 
-##Etiquetas Básicas:
+## Etiquetas Básicas:
 
 
 *Todo lo que veremos desde ahora se debe escribir dentro del* **body** *(hasta que se indique lo contrario), por ende dentro de las etiquetas* `<body>``</body>`
 
 
-###Párrafos:
+### Párrafos:
 
 
 Si escribes en el archivo index.html :
@@ -253,7 +253,7 @@ En Sublime Text si se escribe "p" (o cualquier marca) y luego tab, se autocomple
 ![imagen index_img](images/sublime_file_ext.png)
 
 
-###Titulares (Títulos) y Sub titulares:
+### Titulares (Títulos) y Sub titulares:
 
 Una página web también tiene titulares, al igual que un periódico!
 
@@ -338,7 +338,7 @@ Refrescamos el navegador:
 
 ![imagen index_img](images/index_img2.png)
 
-#####Imágenes desde el computador:
+##### Imágenes desde el computador:
 
 Para esto debes crearte una carpeta **dentro** de tu proyecto llamada *images* y ahí ir integrando las imágenes que quieres en tu proyecto:
 
@@ -361,7 +361,7 @@ Entonces para agregarla en mi web se copia la ruta de donde se encuentra mi imag
 
 Donde *images* es el nombre de la carpeta donde se encuentra mi imagen + `/` + *ejemplo* (nombre de mi imagen) `.jpg`(formato)
 
-###Links:
+### Links:
 
 Los links se hacen con la etiqueta `<a>`:
 
@@ -463,7 +463,7 @@ Las listas ordenadas tienen un número o letra, esto lo modificaremos más adela
 ~~~
 ![imagen lista ordenada](images/listaordenada.png)
 
-###listas desordenadas:
+### listas desordenadas:
 
 Las listas desordenadas tienen bullets, esto también es modificable con CSS.
 Para definir una lista de elementos desordenados ocuparemos la etiqueta `<ul>`, y dentro de esta lista debemos definir elementos, eso lo haremos con la etiqueta `<li>` 
@@ -477,7 +477,7 @@ Para definir una lista de elementos desordenados ocuparemos la etiqueta `<ul>`, 
 </ul>
 ~~~
 ![imagen lista ordenada](images/listadesordenada.png)
-###Tablas
+### Tablas
 
 Es posible agregar tablas con datos ocupando la etiqueta `<table>`, dentro de una tabla debemos especificar las filas y las celdas dentro de las filas utilizando `<tr>` y `<td>` cada etiqueta tr especifica una nueva fila, y cada etiqueta td una celda.
 
@@ -509,7 +509,7 @@ Es posible agregar tablas con datos ocupando la etiqueta `<table>`, dentro de un
 
 </table>
 
-###Divs:
+### Divs:
 Los divs son etiquetas que permiten anidar a otras etiqueta y le damos estilo propio a la agrupación (esto lo haremos más adelante con CSS).
 Envuelve varias etiquetas, y todas las etiquetas envueltas por él, están bajo la influencia del div.
 
@@ -521,7 +521,7 @@ Envuelve varias etiquetas, y todas las etiquetas envueltas por él, están bajo 
 </div>
 ~~~
 
-###Span:
+### Span:
 
 La etiqueta span es similar a los divs pero sirve para etiquetar texto, una parte de una palabra, una palabra o más. (luego con CSS, hace más sentido, por ahora es bueno que la conozcas)
 
@@ -529,7 +529,7 @@ La etiqueta span es similar a los divs pero sirve para etiquetar texto, una part
 <p> Lorem <span> Ipsum </span> </p>
 ~~~
 
-###Etiquetas semánticas:
+### Etiquetas semánticas:
 
 HTML5 introduce  etiquetas semánticas, que no aportan ningún comportamiento visual adicional, pero que nos permiten por un lado definir de forma semántica el significado de su contenido, lo que será muy útil para el SEO (la optimización de contenidos para buscadores)
 
@@ -537,10 +537,10 @@ HTML5 introduce  etiquetas semánticas, que no aportan ningún comportamiento vi
 
 Si quieres aprender más [aquí](http://www.tutorialmonsters.com/web-semantica-con-html5/)
 
-###Resumen de etiquetas
+### Resumen de etiquetas
 Resumen de las etiquetas [aquí](resumen/resumen_de_marcas.md)
 
-##El inspector de elementos
+## El inspector de elementos
 El inspector de elementos, es una herramienta que podemos abrirla haciendo click derecho sobre la página y luego inspect nos muestra el código completo de la página y nos permite modificarlo. Con esta herramienta pueden ver el código de cualquier página web. 
 
 Puedes aprender más sobre él [aquí](https://developer.mozilla.org/es/docs/Tools/Page_Inspector)
@@ -551,7 +551,7 @@ Puedes aprender más sobre él [aquí](https://developer.mozilla.org/es/docs/Too
 Juega un rato con él, inspecciona lo que llevas de tu página, y mira sitios de tu interés.
 </div>
 
-##Encontrando errores en una página web
+## Encontrando errores en una página web
 Una buena herramienta para detectar errores en tu página es w3c validator. Tiene diversas formas de validar, nosotros ocuparemos **Validate by direct input**, ahí podemos copiar el contenido de nuestra página y ver si hay errores de algún tipo.
 
 
@@ -565,7 +565,7 @@ Ahora vamos a saltar al diseño de nuestra página web, luego continuaremos con 
 
 Nosotros estábamos aprendiendo HTML, que vendría siendo el esqueleto de nuestro sitio web, ahora le añadiremos la "piel", el diseño, y eso lo hacemos con CSS.
 
-#¿Qué es CSS?
+# ¿Qué es CSS?
 
 CSS es acrónimo de Cascading Style Sheet, o sea hojas de estilo que se pueden incorporar dentro de HTML para darle forma y color a nuestra voluntad.
 
@@ -579,7 +579,7 @@ Hay tres formas de incorporar CSS dentro de una página web.
 
 La **forma recomendada de trabajar es la 3º**, pero para explicar como funciona CSS ejemplificaremos sobre la primera y se dará una breve explicación de la segunda.
 
-##Sintaxis y primera forma
+## Sintaxis y primera forma
 Todas las instrucciones en CSS se escriben en pares propiedad: valor, para agregar CSS sobre una etiqueta HTML (Primera forma) debes agregar a la etiqueta syle="propiedad: valor"
 
 ## Un ejemplo: color para un párrafo
@@ -590,7 +590,7 @@ Todas las instrucciones en CSS se escriben en pares propiedad: valor, para agreg
 
 Intenta cambiar ahora el color de Body
 
-##Agregando CSS en el head
+## Agregando CSS en el head
  
 La segunda forma de agregar CSS consiste en agregar las propiedades y valores de CSS dentro de una etiqueta style en el head de la página
 
@@ -604,7 +604,7 @@ La segunda forma de agregar CSS consiste en agregar las propiedades y valores de
 </head>
 ~~~
 
-###Sintaxis:
+### Sintaxis:
 La sintaxis de css siempre tiene la siguiente estructura:
 
 ~~~css
@@ -613,7 +613,7 @@ etiqueta {
 }
 ~~~
 
-##Cargando un CSS externo:
+## Cargando un CSS externo:
 La tercera forma para incluir CSS en una página web consiste en agregar un link a un CSS externo, con externo se refiere a fuera de la página, pero puede estar dentro del mismo servidor, o se puede cargar desde otro sitio.
 
 Primero creamos un archivo nuevo, dentro de la carpeta de nuestro proyecto, llamado miestilo.css
@@ -656,7 +656,7 @@ Quedando de esta manera:
 Con esto estamos agregando el CSS del archivo miestilo.css a nuestra página web.
 
 
-####Color:
+#### Color:
 
 Por ejemplo empecemos por cambiarle el color a la letra de algún título.
 
@@ -741,7 +741,7 @@ Nótese también que ahora no se utilizó darle el color nombrándolo, sino que 
 
 Más Sobre sistema de colores en CSS [aquí](http://htmlcolorcodes.com/es/tutoriales/conceptos-basicos-de-color-css/).
 
-###Tamaño de la fuente :
+### Tamaño de la fuente :
 Ademas de darle color a la letra también se puede cambiar el tamaño.
 Eso se hace utilizando la propiedad `font-size`
 
@@ -760,7 +760,7 @@ Pero esto hará que **todos** los párrafos se comporten de esa manera (que teng
 
 Ahora lo sabrás:
 
-##ID y Clases
+## ID y Clases
 
 Los **ID** son identificadores **únicos** para cada etiqueta, es como un nombre que se le da a la etiqueta para hacerla única.
 
@@ -849,7 +849,7 @@ body {font-family: 'Open Sans', sans-serif;}
 Hay muchas propiedades en CSS, [aquí](http://www.mclibre.org/consultar/htmlcss/css/css_propiedades.html) un listado de algunas.
 
 
-#¿Qué es Bootstrap?
+# ¿Qué es Bootstrap?
 
 Bootstrap es el framework más popular para el desarrollo de sitios responsive en la web, su código es compatible con SaSS y LESS por lo que podemos trabajar en nuestro preprocesador favorito sin problemas, además existen cientos de herramientas y plantillas que podemos integrar directamente con bootstrap.
 
@@ -860,7 +860,7 @@ Es un framework relativamente pesado, del orden de 50k por lo que integrarlo par
 Utilizar bootstrap completamente por defecto y no personalizarlo da un toque genérico a la página, hay muchos sitios construidos con este framework por lo que si no lo personalizamos se ve igual a los otros.
 
 
-#Descargando bootstrap
+# Descargando bootstrap
 Hay dos formas, la primera es el [CDN](https://www.bootstrapcdn.com/), la segunda descargando los archivos.
 
 El CDN consiste simplemente en 2 archivos CSS y un archivo JS que deben ser linkeados en la página.
@@ -885,7 +885,7 @@ bootstrap/
 <aside class="info yellow"> Un CDN es una especie de página web para descargar contenido, pero está optimizada para la descarga rápida de assets, además que los CDN tienen servidores en diversas partes del mundo disminuyendo el impacto en la velocidad por distancia.
 </aside>
 
-#El primer template con bootstrap
+# El primer template con bootstrap
 
 ~~~html
 <!DOCTYPE html>
@@ -942,7 +942,7 @@ Un error típico que podemos detectar de esta forma es la no inclusión (o la in
 # Comenzando con bootstrap
 Partamos por las componentes básicas.
 
-##Botón
+## Botón
 
 Te diriges a la [documentación](http://getbootstrap.com/) de Bootstrap, luego
 te diriges  a tab `CSS` y encuentra en el menú derecho `Buttons`.
@@ -961,7 +961,7 @@ Entonces que pasa aquí, se utiliza la etiqueta button (para que sepa que es un 
 
 Esta es una de las maravillas de Bootstrap! Puedes asignarle diseño, propiedades y más por medio de clases predeterminadas por Bootstrap.
 
-##Jumbotron
+## Jumbotron
 Es una componente lightweight y flexible que permite mostrar texto o imágenes de forma resaltada en el sitio, ideal para la propuesta de valor del landing page
 
 Ejemplo de uso:
@@ -974,7 +974,7 @@ Ejemplo de uso:
 
 ![](images/jumbotron.png)
 
-##Page Header
+## Page Header
 El page-header es otro componente liviano que sirve para títulos de secciones, además puede acompañarse con otro texto de clase small para acompañar el contenido.
 
 ![](images/page-header.png)
@@ -985,7 +985,7 @@ El page-header es otro componente liviano que sirve para títulos de secciones, 
 </div>
 ~~~
 
-##Container
+## Container
 Es un contenedor que da margen de los bordes del sitio, bastante útil a la hora de mostrar texto.
 
 ![](images/container.png)
@@ -1011,7 +1011,7 @@ En la imagen vemos dos párrafos uno con container y el otro sin, el que tiene c
 </div>
 ~~~
 
-##Jumbotron y Containers
+## Jumbotron y Containers
 	
 Un jumbotron puede ir dentro de un container y un container puede ir dentro de un jumbotron **No es lo mismo un container dentro de un jumbotron que un jumbotron dentro de un container**, esto es lo que estudiaremos a continuación.
 
@@ -1155,7 +1155,7 @@ Al ser barra de navegación, pego el código al inicio de nuestro código, luego
 
 
 
-##La Grilla
+## La Grilla
 
 Bootstrap contiene una grilla que permite crear layouts de forma muy sencilla.
 
@@ -1224,7 +1224,7 @@ Si vamos agregar texto o imagánes sería bueno envolver las columnas en un cont
 
 Entonces resumiendo: Se empieza por añadiendo la clase `.row`, esto creará un bloque horizontal el cual va a contener 12 columnas.
 
-###Utilizando columnas para dispositivos específicos
+### Utilizando columnas para dispositivos específicos
 
 Es bueno analizar de que palabras vienen los nombres de reglas de estilo que provee Bootstrap:
 
@@ -1259,7 +1259,7 @@ Es bueno analizar de que palabras vienen los nombres de reglas de estilo que pro
 *Donde* ` * ` es el número de columnas.
 
 
-###Mobile First
+### Mobile First
 
 Bootstrap 3 está construido sobre el concepto de mobile first, esto quiere decir que el primer principio es que la página debe adaptarse al contenido, para eso lo que hace bootstrap es utilizar media queries y desarmar la grilla disponiendo de todo el ancho de la página para presentar su contenido.
 
@@ -1271,7 +1271,7 @@ Al disminuir el ancho de la página (o al verla desde un teléfono) veremos que 
 
 <img src="images/9 mobile-first.png">
 
-###Media queries
+### Media queries
 
 La grilla contiene las siguientes media queries que debemos considerar:
 
