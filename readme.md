@@ -9,11 +9,10 @@
 
 # Introducción 
 
-En Chile, A nivel urbano nacional, el 20% de las mujeres ocupadas en Chile son “trabajadoras por cuenta propia”, según la encuesta Voz de Mujer (cifra que coincide con la entregada por la última Casen). En tanto, solo el 3% son “patrón o empleadora”, lo cuál correspondería a empresarias.
+HackGirls es una iniciativa que nace en Chile con el objetivo de motivar mujeres a unirse al mundo de programación y tecnología.
 
-El propósito de HackGirls es cambiar esta realidad, a través de la entrega de conocimientos y herramientas que faciliten la creación de empresas y tecnología.
+Esto se hace a través de eventos que sirven para dar un **sencillo** primer paso para entrar a este maravilloso mundo.
 
-Front Day es un evento con el objetivo de entregar conocimientos básicos de programación web a mujeres programadoras para que puedan construir y supervisar la construcción de las páginas web de sus empresas.
 
 # Qué se necesita para este taller:
 
