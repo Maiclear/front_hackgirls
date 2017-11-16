@@ -1055,7 +1055,7 @@ Algo muy distinto sucede cuando ponemos el jumbotron dentro de un container.
 
 Como vemos en la imagen nos damos cuenta que ahora el jumbotron no está pegado al borde de la página, y además ahora es el borde del jumbotron el que está alineado con el texto de los otros containers.
 
->> #####**¿Cuál método utilizar?** <br> 
+>> ##### **¿Cuál método utilizar?** <br> 
 >> Depende de lo que se quiera hacer, todos los métodos previos son correctos 
 
 ## Glyphicons
