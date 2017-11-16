@@ -860,6 +860,8 @@ Utilizar bootstrap completamente por defecto y no personalizarlo da un toque gen
 
 
 # Descargando bootstrap
+<aside class="info yellow"> Ojo: En esta guía se estará utilizando la versión **v3.3.7** de Bootstrap </aside>
+
 Hay dos formas, la primera es el [CDN](https://www.bootstrapcdn.com/), la segunda descargando los archivos.
 
 El CDN consiste simplemente en 2 archivos CSS y un archivo JS que deben ser linkeados en la página.
@@ -1069,10 +1071,14 @@ se puede consultar en la: [documentación oficial](http://getbootstrap.com/compo
 
 ## Imágenes responsive
 
-Con bootstrap podemos convertir una imagen responsive solo con agregar la clases img-responsive
+Con bootstrap podemos convertir una imagen responsive solo con agregar la clases img-responsive (en caso de Bootstrap v.4 se utiliza img-fluid )
 
 ~~~html 
-<img src="..." class="img-responsive" alt="Responsive image">
+<img src="..." class="img-responsive" alt="Responsive image"> 
+<!-- (para versiones de Bootstrap menores a la 4) -->
+
+<img src="..." class="img-fluid" alt="Responsive image">
+<!-- (para versión 4 de Bootstrap) -->
 ~~~
 
 `img-responsive` hace que la imagen tenga un **max-width** del 100%, recordemos que la diferencia entre width y max-width es que width altera el tamaño de todos los elementos mientras que **max-width** como dice su nombre afecta solo a los elementos que tienen un tamaño mayor que el espacio que tienen disponible.
