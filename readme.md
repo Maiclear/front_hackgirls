@@ -140,9 +140,10 @@ Muestra en el navegador el título de la página, se escribe entre las marcas `<
 
 ![imagen del titulo](images/ScreenTitleHack.png)
 
-<div class=" info yellow">
-Cabe destacar que Los bookmarks ocupan el título de la página cuando se guarda, además tiene mucho valor en el SEO de un sitio web.
-</div>
+>>Cabe destacar que Los bookmarks ocupan el título de la página
+>>cuando se guarda, además tiene mucho valor en el SEO de un
+>>sitio web.
+
 
 
 ## Codificación
@@ -166,7 +167,8 @@ La página debería quedar así:
 </html>
 ~~~
 
-<div class=" info yellow"> Sin el meta charset los tildes y ñ (caracteres especiales) no se verán correctamente dentro de nuestro documento </div>
+>> Sin el meta charset los tildes y ñ (caracteres especiales) no
+>> se verán correctamente dentro de nuestro documento
 
 ## Atributos y valores
 
@@ -178,9 +180,10 @@ Son diversos los atributos y valores que se pueden pasar a cada etiqueta, dos at
 
 La información de la página dentro del head es para el navegador, la información que está dentro del cuerpo es para el usuario. 
 
-<div class="info yellow">
-El navegador lee dentro de ambas etiquetas, pero las del head no las muestras, las ocupa para determinar ciertos parámetros, en cambio el body se lo muestra al usuario.
-</div>
+
+>>El navegador lee dentro de ambas etiquetas, pero las del head
+>>no las muestras, las ocupa para determinar ciertos parámetros,
+>>en cambio el body se lo muestra al usuario.
 
 ![cabeza y cuerpo](images/cabezacuerpo.png)
 
@@ -391,10 +394,10 @@ Si yo quisiera que el link me abriera en una página nueva, hay que agregarle a 
 
 *Importante resaltar que todos los* **atributos** (`href` , `target`, etc...) *se escriben dentro de la etiqueta `< ... >` no fuera, ya que pasaría a ser texto.*
 
-<div class="yellow">
-Ahora trata de transformar una imagen en hipervínculo.
-Si necesitas ayuda, no dudes en preguntar a tu mentor.
-</div>
+
+>>Ahora trata de transformar una imagen en hipervínculo.
+>>Si necesitas ayuda, no dudes en preguntar a tu mentor.
+
 
 ***
 
@@ -546,9 +549,10 @@ Puedes aprender más sobre él [aquí](https://developer.mozilla.org/es/docs/Too
 
 ![inspector de elementos](images/inspect.png)
 
-<div class="yellow">
-Juega un rato con él, inspecciona lo que llevas de tu página, y mira sitios de tu interés.
-</div>
+
+>>Juega un rato con él, inspecciona lo que llevas de tu página,
+>>y mira sitios de tu interés.
+
 
 ## Encontrando errores en una página web
 Una buena herramienta para detectar errores en tu página es w3c validator. Tiene diversas formas de validar, nosotros ocuparemos **Validate by direct input**, ahí podemos copiar el contenido de nuestra página y ver si hay errores de algún tipo.
@@ -632,7 +636,8 @@ Para agregar un link a un css ocuparemos la etiqueta link dentro del `<head>`.
 <link rel="stylesheet" type="text/css" href="miestilo.css">
 ~~~
 
-<div class="info yellow"> En Sublime Text si se escribe link y luego se autocompleta con tab, la línea para agregar un CSS externo se escribe sola. </div>
+>>En Sublime Text si se escribe link y luego se autocompleta con
+>>tab, la línea para agregar un CSS externo se escribe sola.
 
 Quedando de esta manera:
 
@@ -860,7 +865,8 @@ Utilizar bootstrap completamente por defecto y no personalizarlo da un toque gen
 
 
 # Descargando bootstrap
-<aside class="info yellow"> Ojo: En esta guía se estará utilizando la versión **v3.3.7** de Bootstrap </aside>
+>>Ojo: En esta guía se estará utilizando la versión **v3.3.7**
+>>de Bootstrap
 
 Hay dos formas, la primera es el [CDN](https://www.bootstrapcdn.com/), la segunda descargando los archivos.
 
@@ -883,8 +889,11 @@ bootstrap/
     └── examples/
 </pre>
 
-<aside class="info yellow"> Un CDN es una especie de página web para descargar contenido, pero está optimizada para la descarga rápida de assets, además que los CDN tienen servidores en diversas partes del mundo disminuyendo el impacto en la velocidad por distancia.
-</aside>
+>>Un CDN es una especie de página web para descargar contenido,
+>>pero está optimizada para la descarga rápida de assets, además
+>>que los CDN tienen servidores en diversas partes del mundo
+>>disminuyendo el impacto en la velocidad por distancia.
+
 
 # El primer template con bootstrap
 
@@ -936,7 +945,8 @@ Para detectar si hay conflictos con las rutas que pusimos para los assets de boo
 
 ![](images/inspector.png)
 
-<aside class="info yellow"> Abrir el tab no es suficiente, hay que recargar la página con el tab network abierto para obtener la información. </aside>
+>>Abrir el tab no es suficiente, hay que recargar la página con
+>>el tab network abierto para obtener la información.
 
 Un error típico que podemos detectar de esta forma es la no inclusión (o la inclusión posterior) de Jquery, el javascript de bootstrap depende de Jquery para su funcionamiento, por lo que no incluirlo o hacerlo después mostrará un error y no funcionará correctamente la capa de javascript de bootstrap.
 
@@ -1045,7 +1055,8 @@ Algo muy distinto sucede cuando ponemos el jumbotron dentro de un container.
 
 Como vemos en la imagen nos damos cuenta que ahora el jumbotron no está pegado al borde de la página, y además ahora es el borde del jumbotron el que está alineado con el texto de los otros containers.
 
-<aside class="yellow "> **¿Cuál método utilizar?** <br> Depende de lo que se quiera hacer, todos los métodos previos son correctos </aside>
+>> #####**¿Cuál método utilizar?** <br> 
+>> Depende de lo que se quiera hacer, todos los métodos previos son correctos 
 
 ## Glyphicons
 
@@ -1093,7 +1104,10 @@ Además hay clases que pueden ayudarnos a darle formas a las imágenes.
 <img src="..." alt="..." class="img-thumbnail">
 ~~~
 
-<aside class="yellow"> **width vs max-widht** <br> debemos tener cuidado con la propiedad max-width porque esta no cambiará el tamaño de las fotos que son menores al espacio disponible. </aside>
+>> #####**width vs max-widht** <br>
+>> Debemos tener cuidado con la propiedad max-width porque esta
+>> no cambiará el tamaño de las fotos que son menores al espacio
+>> disponible.
  
 ## Thumbnails
  
@@ -1119,7 +1133,10 @@ Los thumbnails permiten agregar estilos y bordes de forma sencilla a las imágen
 ![](images/thumbnail.png)
 
 >> ##### **To thumbnail or not to thumbnail**
-La clase thumbnail puede aplicarse directamente a la imagen o a un div superior, en caso de aplicarse a la imagen perderemos otras propiedades como el redondeado y no podremos poner otro contenido dentro del thumbnail.
+>> La clase thumbnail puede aplicarse directamente a la imagen 
+>> a un div superior, en caso de aplicarse a la imagen
+>> perderemos otras propiedades como el redondeado y no podremos
+>> poner otro contenido dentro del thumbnail.
 
 
 ## NavBar
