@@ -1075,7 +1075,7 @@ Con bootstrap podemos convertir una imagen responsive solo con agregar la clases
 
 ~~~html 
 <img src="..." class="img-responsive" alt="Responsive image"> 
-<!-- (para versiones de Bootstrap menores a la 4) -->
+<!-- (para versión 3.3.7 de Bootstrap ) -->
 
 <img src="..." class="img-fluid" alt="Responsive image">
 <!-- (para versión 4 de Bootstrap) -->
@@ -1118,9 +1118,9 @@ Los thumbnails permiten agregar estilos y bordes de forma sencilla a las imágen
 
 ![](images/thumbnail.png)
 
-<aside class="info yellow"> **To thumbnail or not to thumbnail** <br>
+>> ##### **To thumbnail or not to thumbnail**
 La clase thumbnail puede aplicarse directamente a la imagen o a un div superior, en caso de aplicarse a la imagen perderemos otras propiedades como el redondeado y no podremos poner otro contenido dentro del thumbnail.
-</aside>
+
 
 ## NavBar
 
