@@ -1104,7 +1104,7 @@ Además hay clases que pueden ayudarnos a darle formas a las imágenes.
 <img src="..." alt="..." class="img-thumbnail">
 ~~~
 
->> #####**width vs max-widht** <br>
+>> ##### **width vs max-widht** <br>
 >> Debemos tener cuidado con la propiedad max-width porque esta
 >> no cambiará el tamaño de las fotos que son menores al espacio
 >> disponible.
